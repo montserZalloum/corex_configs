@@ -7,7 +7,7 @@ app_license = "mit"
 
 # Apps
 # ------------------
-
+app_include_js = "/assets/corex_configs/js/custom_header.js"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
