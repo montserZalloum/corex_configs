@@ -10,7 +10,11 @@ app_license = "mit"
 app_include_js = "/assets/corex_configs/js/custom_header.js"
 app_include_css = "/assets/corex_configs/css/corex_theme.css"
 website_context = {
-    "favicon": "/assets/corex_configs/images/corex_favicon.ico"
+    "favicon": "/assets/corex_configs/images/corex_favicon.ico",
+    "app_name": "Corex",
+    "brand_image": "/assets/corex_configs/images/corex_logo.ico",
+    "splash_image": "/assets/corex_configs/images/corex_logo.ico",
+    "brand_html": "<img src='/assets/corex_configs/images/corex_logo.ico' alt='Corex' style='height: 30px;'>"
 }
 
 doc_events = {
