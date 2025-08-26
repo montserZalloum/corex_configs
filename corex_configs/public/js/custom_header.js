@@ -106,8 +106,8 @@ function isCRMPageFromPath(path) {
     // Check if current path starts with any of the CRM pages
     return crmPages.some(function(page) {
         return path.startsWith(page);
-    });
-}
+    }); 
+} 
 
 function addCustomShortcutsButton(currentRoute) {
     // Find the navbar where we want to add the button
