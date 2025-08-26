@@ -435,3 +435,6 @@
       opacity: 0;
     }
   }
+  .dropdown-menu.dropdown-menu-right .dropdown-item[href="/apps"]{
+    display: none !important;
+  }

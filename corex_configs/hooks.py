@@ -10,7 +10,7 @@ app_license = "mit"
 app_include_js = "/assets/corex_configs/js/custom_header.js"
 app_include_css = "/assets/corex_configs/css/corex_theme.css"
 website_context = {
-    "favicon": "https://www.y-denka.com/favicon.ico"
+    "favicon": "/assets/corex_configs/images/corex_favicon.ico"
 }
 
 doc_events = {
