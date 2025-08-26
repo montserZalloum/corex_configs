@@ -5,6 +5,7 @@ app_description = "Special configuration of corex"
 app_email = "corex@corex.com"
 app_license = "mit"
 
+
 # Apps
 # ------------------
 app_include_js = "/assets/corex_configs/js/custom_header.js"
@@ -12,9 +13,7 @@ app_include_css = "/assets/corex_configs/css/corex_theme.css"
 website_context = {
     "favicon": "/assets/corex_configs/images/corex_favicon.ico",
     "app_name": "Corex",
-    "brand_image": "/assets/corex_configs/images/corex_logo.ico",
     "splash_image": "/assets/corex_configs/images/corex_logo.ico",
-    "brand_html": "<img src='/assets/corex_configs/images/corex_logo.ico' alt='Corex' style='height: 30px;'>"
 }
 
 doc_events = {
@@ -25,7 +24,10 @@ doc_events = {
 }
 
 web_include_js = "assets/corex_configs/js/login_redirect.js"
-after_migrate = ["corex_configs.overrides.corex_translations.setup_corex_translations"]
+after_migrate = [
+    "corex_configs.overrides.corex_translations.setup_corex_translations",
+    "corex_configs.setup.set_default_logo"
+]
 on_session_creation = "corex_configs.auth.on_login_redirect"
 # required_apps = []
 
