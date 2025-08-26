@@ -19,6 +19,8 @@ doc_events = {
     }
 }
 
+after_migrate = ["corex_configs.overrides.corex_translations.setup_corex_translations"]
+
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
