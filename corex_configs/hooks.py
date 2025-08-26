@@ -12,6 +12,13 @@ app_include_css = "/assets/corex_configs/css/corex_theme.css"
 website_context = {
     "favicon": "https://www.y-denka.com/favicon.ico"
 }
+
+doc_events = {
+    "Website Settings": {
+        "before_save": "corex_configs.overrides.powered_by_footer"
+    }
+}
+
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
