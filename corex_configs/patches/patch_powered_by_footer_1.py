@@ -19,3 +19,9 @@ def execute():
     doc.save(ignore_permissions=True)
     frappe.db.commit() # Commit the change to the database
     print("Default 'Powered By' footer has been set to 'Powered By Corex'.")
+
+  if not doc.app_name or doc.app_name == "Frappe":
+    doc.app_name = "Corex"
+    doc.save(ignore_permissions=True)
+    frappe.db.commit() # Commit the change to the database
+    print("Default 'App Name' has been set to 'Corex'.")

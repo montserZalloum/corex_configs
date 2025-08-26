@@ -15,7 +15,8 @@ website_context = {
 
 doc_events = {
     "Website Settings": {
-        "before_save": "corex_configs.overrides.powered_by_footer"
+        "before_save": "corex_configs.overrides.powered_by_footer",
+        "before_save": "corex_configs.overrides.powered_by_footer.app_name"
     }
 }
 
