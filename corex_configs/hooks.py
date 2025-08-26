@@ -19,8 +19,9 @@ doc_events = {
     }
 }
 
+web_include_js = "assets/corex_configs/js/login_redirect.js"
 after_migrate = ["corex_configs.overrides.corex_translations.setup_corex_translations"]
-
+on_session_creation = "corex_configs.auth.on_login_redirect"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
