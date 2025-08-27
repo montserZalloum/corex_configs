@@ -1,0 +1,18 @@
+[
+ {
+  "default_value": null,
+  "doc_type": "Lead",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocType",
+  "field_name": null,
+  "is_system_generated": 0,
+  "modified": "2025-08-27 16:37:37.801407",
+  "module": "Corex Configs",
+  "name": "Lead-main-default_view",
+  "property": "default_view",
+  "property_type": "Select",
+  "row_name": null,
+  "value": "Kanban"
+ }
+]
