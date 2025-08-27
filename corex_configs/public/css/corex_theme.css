@@ -15,6 +15,7 @@
 }
 .corex-layout .main-section .page-content > .layout-main {
     padding-bottom: 40px;
+    min-height: calc(100vh - 160px);
 }
 /* .corex-layout #body {
   height: calc(100vh - 90px);
