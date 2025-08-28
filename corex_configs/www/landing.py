@@ -3,6 +3,30 @@ from frappe.desk.desktop import get_workspace_sidebar_items
 from frappe import _
 
 
+def get_corex_translation(text, language="en"):
+    """
+    Check if a translation exists for the given text and return the translated version.
+    Returns the original text if no translation is found.
+    """
+    try:
+        # Check if a translation exists in the Translation doctype
+        translation_doc = frappe.db.exists("Translation", {
+            "source_text": text, 
+            "language": language
+        })
+        
+        if translation_doc:
+            # Get the translated text
+            translated_text = frappe.db.get_value("Translation", translation_doc, "translated_text")
+            return translated_text if translated_text else text
+        else:
+            return text
+    except Exception as e:
+        # Log error but don't break the flow
+        frappe.log_error(f"Error checking translation for '{text}': {str(e)}")
+        return text
+
+
 def get_context(context):
     """
     Get only the desk sidebar items that the current user has permission to access.
@@ -26,8 +50,11 @@ def get_context(context):
         # Get the display name (prefer title, then label, then name)
         display_name = page.get("title") or page.get("label") or page.get("name")
         
+        # Apply Corex translations to the display name
+        translated_display_name = get_corex_translation(display_name)
+        
         # Check if this is a CRM module and redirect to CRM lead
-        if display_name.lower() == "crm":
+        if translated_display_name.lower() == "crm":
             # Get the last created kanban for lead
             try:
                 last_kanban = frappe.get_last_doc("Kanban Board", filters={
@@ -48,7 +75,7 @@ def get_context(context):
                 workspace_link = f"/app/private/{frappe.utils.slug(display_name)}"
         
         sidebar_items.append({
-            "name": display_name,
+            "name": translated_display_name,  # Use translated name
             "link": workspace_link,
             "icon_name": page.get("icon"),
             "is_public": page.get("public"),
