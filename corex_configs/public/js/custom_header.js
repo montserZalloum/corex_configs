@@ -4,6 +4,7 @@
 $(document).ready(function() {
     // Try multiple times to ensure DOM is ready
     initializeWithRetry();
+    setLandingPageLink__LogoHeader();
 });
 
 // Listen for route changes
@@ -171,3 +172,10 @@ function addCustomShortcutsButton(currentRoute) {
     }
 }
 
+
+
+function setLandingPageLink__LogoHeader() {
+    if (document.querySelector('.navbar-brand.navbar-home')) {
+        document.querySelector('.navbar-brand.navbar-home').setAttribute('href', '/landing');
+    }
+}
