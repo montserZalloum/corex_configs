@@ -26,11 +26,26 @@ def get_context(context):
         # Get the display name (prefer title, then label, then name)
         display_name = page.get("title") or page.get("label") or page.get("name")
         
-        # Generate the correct workspace link based on public/private status
-        if page.get("public"):
-            workspace_link = f"/app/{frappe.utils.slug(display_name)}"
+        # Check if this is a CRM module and redirect to CRM lead
+        if display_name.lower() == "crm":
+            # Get the last created kanban for lead
+            try:
+                last_kanban = frappe.get_last_doc("Kanban Board", filters={
+                    "reference_doctype": "Lead"
+                })
+                if last_kanban:
+                    workspace_link = f"/app/lead/view/kanban/{last_kanban.name}"
+                else:
+                    workspace_link = "/app/lead"
+            except frappe.DoesNotExistError:
+                # Fallback to lead list if no kanban exists
+                workspace_link = "/app/lead"
         else:
-            workspace_link = f"/app/private/{frappe.utils.slug(display_name)}"
+            # Generate the correct workspace link based on public/private status
+            if page.get("public"):
+                workspace_link = f"/app/{frappe.utils.slug(display_name)}"
+            else:
+                workspace_link = f"/app/private/{frappe.utils.slug(display_name)}"
         
         sidebar_items.append({
             "name": display_name,
