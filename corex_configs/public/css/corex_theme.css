@@ -451,7 +451,7 @@
   }
 
   
-  .dropdown-menu.dropdown-menu-right .dropdown-item[href="/apps"]{
+  .dropdown-menu.dropdown-menu-right .dropdown-item[href="/apps"],
+  .navbar .dropdown-help{
     display: none !important;
   }
-  

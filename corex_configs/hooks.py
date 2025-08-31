@@ -33,7 +33,7 @@ after_migrate = [
 ]
 on_session_creation = "corex_configs.auth.on_login_redirect"
 
-
+fixtures = ["Navbar Settings"]
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
