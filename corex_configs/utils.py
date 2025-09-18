@@ -74,3 +74,34 @@ def disable_update_notification():
             title="Post-Migrate Hook Error (corex_configs)",
             message=f"Failed to set '{field_name}' in '{doctype}'. Error: {e}"
         )
+
+def disable_onboarding_module():
+    """
+    Disables the 'Onboarding Module' by setting the 'enable_onboarding' checkbox
+    in the 'System Settings' Single DocType.
+    """
+    try:
+        doctype = "System Settings"
+        field_name = "enable_onboarding"
+
+        # Check the current value. 1 means it's already enabled.
+        current_value = frappe.db.get_single_value(doctype, field_name)
+
+        # Only update if it's not already enabled
+        if current_value != 0:
+            # Set the value to 1 to disable (check the box)
+            frappe.db.set_single_value(doctype, field_name, 0)
+            frappe.db.commit()
+
+            # Log the success for debugging
+            frappe.log_error(
+                title="Post-Migrate Hook (corex_configs)",
+                message=f"Successfully disabled '{field_name}' in '{doctype}'."
+            )
+
+    except Exception as e:
+        # Log any potential errors
+        frappe.log_error(
+            title="Post-Migrate Hook Error (corex_configs)",
+            message=f"Failed to set '{field_name}' in '{doctype}'. Error: {e}"
+        )

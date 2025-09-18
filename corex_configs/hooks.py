@@ -31,7 +31,8 @@ after_migrate = [
     "corex_configs.overrides.corex_translations.setup_corex_translations",
     "corex_configs.setup.set_default_logo",
     "corex_configs.utils.modify_shortcuts",
-    "corex_configs.utils.disable_update_notification"
+    "corex_configs.utils.disable_update_notification",
+    "corex_configs.utils.disable_onboarding_module"
 ]
 on_session_creation = "corex_configs.auth.on_login_redirect"
 
