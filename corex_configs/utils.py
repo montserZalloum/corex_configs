@@ -26,7 +26,7 @@ def modify_shortcuts():
             item.get("type") == "shortcut"
             and item.get("data", {}).get("shortcut_name") == shortcut_to_remove
         )
-    ]
+    ] 
 
     # Only save if a change was actually made.
     if len(new_content) < len(content):
