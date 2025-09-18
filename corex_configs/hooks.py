@@ -14,10 +14,11 @@ app_include_js = [
 ]
 app_include_css = "/assets/corex_configs/css/corex_theme.css"
 website_context = {
-    "favicon": "/assets/corex_configs/images/corex_favicon.ico",
+    "favicon": "/assets/corex_configs/images/corex_favicon.png",
     "app_name": "Corex",
-    "splash_image": "/assets/corex_configs/images/corex_logo.ico",
+    "splash_image": "/assets/corex_configs/images/corex_logo.png",
 }
+
 
 doc_events = {
     "Website Settings": {
@@ -30,6 +31,7 @@ web_include_js = "assets/corex_configs/js/login_redirect.js"
 after_migrate = [
     "corex_configs.overrides.corex_translations.setup_corex_translations",
     "corex_configs.setup.set_default_logo",
+    "corex_configs.setup.replace_default_logo",
     "corex_configs.utils.modify_shortcuts",
     "corex_configs.utils.disable_update_notification",
     "corex_configs.utils.disable_onboarding_module"
