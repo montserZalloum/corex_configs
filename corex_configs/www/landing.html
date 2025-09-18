@@ -90,6 +90,15 @@
     color: var(--foreground);
     overflow-x: hidden;
   }
+  .comp-log {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
   /* Galaxy Dashboard Styles */
   .galaxy-dashboard {
@@ -427,6 +436,9 @@
     
     {% include "templates/includes/corex_bg.html" %}
         <div class="galaxy-dashboard">
+            <div class="comp-log">
+                <img src="/assets/corex_configs/images/corex-logo-white.png" alt="Corex Logo" width="200" >
+            </div>
             <div class="dashboard-container">
                 {% if sidebar_items %}
               <div class="app-grid">
@@ -1470,19 +1482,6 @@
             
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-        <script>
-            $(document).on('click', '[app-click]', function () {
-                const link = $(this).attr('open-app');
-                if (!link) return;
-
-                const $iframe = $(`<iframe src="${link}" style="height: calc(100vh - 60px); border-radius: 20px; width: 100%; border: none;"></iframe>`);
-                $('.dashboard-container').html($iframe);
-
-            });
-
-
-        </script>
 
 </body>
 </html>

@@ -10,8 +10,8 @@ def setup_corex_translations():
   # Define a list of translations to create
   # Format: (Source Text, Translated Text)
   translations = [
-    ("ERPNext Settings", "Corex Settings"),
-    ("ERPNext Integrations", "Corex Integrations"),
+    # ("ERPNext Settings", "Corex Settings"),
+    # ("ERPNext Integrations", "Corex Integrations"),
     ("Frappe Light", "Corex Light"),
     ("Timeless Night", "Corex Night"),
 

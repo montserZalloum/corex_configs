@@ -7,3 +7,8 @@ $(document).ready(function() {
     setLandingPageLink__LogoHeader();
 });
 
+function setLandingPageLink__LogoHeader() {
+    if (document.querySelector('.navbar-brand.navbar-home')) {
+        document.querySelector('.navbar-brand.navbar-home').setAttribute('href', '/landing');
+    }
+}
