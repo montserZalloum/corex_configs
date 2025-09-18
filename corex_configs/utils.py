@@ -1,5 +1,6 @@
 import frappe
 import json
+import os
 
 def modify_shortcuts():
     """Removes the 'Learn Accounting' shortcut from the Accounting workspace."""
@@ -35,3 +36,41 @@ def modify_shortcuts():
         frappe.logger("Custom App").info(f"Successfully removed '{shortcut_to_remove}' shortcut from Accounting workspace.")
     else:
         frappe.logger("Custom App").info(f"'{shortcut_to_remove}' shortcut not found in Accounting workspace, no changes made.")
+
+
+
+def disable_update_notification():
+    """
+    Sets the 'disable_system_update_notification' checkbox in the 'System Settings'
+    Single DocType by modifying its value directly in the database.
+    """
+    try:
+        # Define the DocType and the field name
+        doctype = "System Settings"
+        field_name = "disable_system_update_notification"
+        
+        # Check the current value in the database.
+        # Checkboxes are stored as 0 (unchecked) or 1 (checked).
+        current_value = frappe.db.get_single_value(doctype, field_name)
+
+        # Only update if it's not already checked (value is not 1)
+        if current_value != 1:
+            # frappe.db.set_single_value is the correct method for Single DocTypes
+            # The value for a checked box is 1
+            frappe.db.set_single_value(doctype, field_name, 1)
+            
+            # Commit the change to the database
+            frappe.db.commit()
+
+            # Optional: Log the success for debugging purposes
+            frappe.log_error(
+                title="Post-Migrate Hook (corex_configs)",
+                message=f"Successfully checked '{field_name}' in '{doctype}'."
+            )
+
+    except Exception as e:
+        # Log any potential errors, e.g., if the field name changes in a future version
+        frappe.log_error(
+            title="Post-Migrate Hook Error (corex_configs)",
+            message=f"Failed to set '{field_name}' in '{doctype}'. Error: {e}"
+        )

@@ -30,7 +30,8 @@ web_include_js = "assets/corex_configs/js/login_redirect.js"
 after_migrate = [
     "corex_configs.overrides.corex_translations.setup_corex_translations",
     "corex_configs.setup.set_default_logo",
-    "corex_configs.utils.modify_shortcuts"
+    "corex_configs.utils.modify_shortcuts",
+    "corex_configs.utils.disable_update_notification"
 ]
 on_session_creation = "corex_configs.auth.on_login_redirect"
 
