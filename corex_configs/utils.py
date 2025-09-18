@@ -12,7 +12,7 @@ def modify_shortcuts():
     try:
         content = json.loads(workspace.get("content")) if workspace.get("content") else []
     except (json.JSONDecodeError, TypeError):
-        # If content is malformed, we can't do anything.
+        # If content is malformed, we can't do anything
         return
 
     shortcut_to_remove = "Learn Accounting"
