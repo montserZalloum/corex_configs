@@ -42,7 +42,7 @@ fixtures = ["Navbar Settings"]
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
+#  add_to_apps_screen = [
 # 	{
 # 		"name": "corex_configs",
 # 		"logo": "/assets/corex_configs/logo.png",
