@@ -31,6 +31,21 @@ def replace_default_logo():
 
         # Copy your file to the destination, overwriting the original
         shutil.copy2(source_logo_path, destination_logo_path)
+
+
+		 # Get the full, absolute path to your custom logo
+        source_logo_path = frappe.get_app_path('corex_configs', 'public', 'images', 'erpnext-favicon.svg')
+        
+        # Get the full, absolute path to the default ERPNext logo
+        destination_logo_path = frappe.get_app_path('erpnext', 'public', 'images', 'erpnext-favicon.svg')
+
+        # Check if your custom logo file actually exists
+        if not os.path.exists(source_logo_path):
+            print(f"ERROR: Source logo not found at {source_logo_path}")
+            return
+
+        # Get the full, absolute path to your custom logo
+        shutil.copy2(source_logo_path, destination_logo_path)
         
         print("Default ERPNext logo replaced successfully.")
 
