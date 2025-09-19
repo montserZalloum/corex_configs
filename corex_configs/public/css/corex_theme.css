@@ -472,6 +472,8 @@
 }
 [data-fieldname="disable_standard_email_footer"],
 [data-fieldname="enable_onboarding"],
-[data-fieldname="hide_footer_in_auto_email_reports"] {
+[data-fieldname="hide_footer_in_auto_email_reports"],
+[data-fieldname="disable_system_update_notification"],
+[data-fieldname="telemetry_section"] {
   display: none;
 }
