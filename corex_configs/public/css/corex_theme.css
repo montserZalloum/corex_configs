@@ -471,6 +471,7 @@
   background: #e0e0e0;
 }
 [data-fieldname="disable_standard_email_footer"],
-[data-fieldname="disable_standard_email_footer"] {
+[data-fieldname="enable_onboarding"],
+[data-fieldname="hide_footer_in_auto_email_reports"] {
   display: none;
 }
