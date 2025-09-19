@@ -451,22 +451,26 @@
   }
 
   
-  .dropdown-menu.dropdown-menu-right .dropdown-item[href="/apps"],
-  .navbar .dropdown-help{
-    display: none !important;
-  }
-  .custom-back-btn-in-header {
-    width: 30px;
-    height: 30px;
-    margin-inline-end: 8px;
-    cursor: pointer;
-    background: #f3f3f3;
-    border-radius: 4px;
-    transition: .4s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .custom-back-btn-in-header:hover {
-    background: #e0e0e0;
-  }
+.dropdown-menu.dropdown-menu-right .dropdown-item[href="/apps"],
+.navbar .dropdown-help{
+  display: none !important;
+}
+.custom-back-btn-in-header {
+  width: 30px;
+  height: 30px;
+  margin-inline-end: 8px;
+  cursor: pointer;
+  background: #f3f3f3;
+  border-radius: 4px;
+  transition: .4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-back-btn-in-header:hover {
+  background: #e0e0e0;
+}
+[data-fieldname="disable_standard_email_footer"],
+[data-fieldname="disable_standard_email_footer"] {
+  display: none;
+}

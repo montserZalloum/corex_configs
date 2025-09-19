@@ -105,3 +105,28 @@ def disable_onboarding_module():
             title="Post-Migrate Hook Error (corex_configs)",
             message=f"Failed to set '{field_name}' in '{doctype}'. Error: {e}"
         )
+
+
+def disable_email_footer():
+    """
+    Disables the standard email footer by setting disable_standard_email_footer=1 as a default value.
+    This will prevent any default mail footer from showing up.
+    """
+    try:
+        # Set the default value (not single value) to disable standard email footer
+        frappe.db.set_default("disable_standard_email_footer", 1)
+        frappe.db.commit()
+        
+        # Log success
+        frappe.log_error(
+            title="Custom Email Footer (corex_configs)",
+            message="Successfully disabled standard email footer to remove ERPNext branding."
+        )
+ 
+    except Exception as e:
+        # Log any potential errors
+        frappe.log_error(
+            title="Custom Email Footer Error (corex_configs)",
+            message=f"Failed to disable standard email footer: {e}"
+        )
+
