@@ -3,39 +3,79 @@ import json
 import os
 
 def modify_shortcuts():
-    """Removes the 'Learn Accounting' shortcut from the Accounting workspace."""
+    """Removes specific 'Learn' shortcuts from their respective workspaces."""
+    
+    # Remove 'Learn Accounting' from the Accounting workspace
+    _remove_shortcut_from_workspace(
+        workspace_name="Accounting", 
+        shortcut_to_remove="Learn Accounting"
+    )
+
+    # Remove 'Learn Sales Management' from the Selling workspace
+    _remove_shortcut_from_workspace(
+        workspace_name="Selling", 
+        shortcut_to_remove="Learn Sales Management"
+    )
+    
+    # Remove 'Learn Inventory Management' from the Stock workspace
+    _remove_shortcut_from_workspace(
+        workspace_name="Stock", 
+        shortcut_to_remove="Learn Inventory Management"
+    )
+    
+    # Remove 'Learn Manufacturing' from the Manufacturing workspace
+    _remove_shortcut_from_workspace(
+        workspace_name="Manufacturing", 
+        shortcut_to_remove="Learn Manufacturing"
+    )
+    
+    # Remove 'Learn Project Management' from the Projects workspace
+    _remove_shortcut_from_workspace(
+        workspace_name="Projects", 
+        shortcut_to_remove="Learn Project Management"
+    )
+
+def _remove_shortcut_from_workspace(workspace_name, shortcut_to_remove):
+    """
+    Generic helper function to remove a specific shortcut from a given workspace.
+    
+    :param workspace_name: The name of the Workspace (e.g., "Accounting").
+    :param shortcut_to_remove: The name of the shortcut to remove (e.g., "Learn Accounting").
+    """
     try:
-        workspace = frappe.get_doc("Workspace", "Accounting")
+        workspace = frappe.get_doc("Workspace", workspace_name)
     except frappe.DoesNotExistError:
-        frappe.log_error("Accounting workspace not found.", "Custom App Error")
+        frappe.log_error(f"{workspace_name} workspace not found.", "Custom App Error")
+        return
+
+    # Skip if content is empty or not set
+    if not workspace.get("content"):
+        frappe.logger("Custom App").info(f"'{workspace_name}' workspace has no content, no changes made.")
         return
 
     try:
-        content = json.loads(workspace.get("content")) if workspace.get("content") else []
+        content = json.loads(workspace.content)
     except (json.JSONDecodeError, TypeError):
-        # If content is malformed, we can't do anything
+        frappe.log_error(f"Failed to parse content for {workspace_name} workspace.", "Custom App Error")
         return
 
-    shortcut_to_remove = "Learn Accounting"
-
-    # Use a list comprehension to build a new list containing everything EXCEPT the target shortcut.
-    # This is a safe and efficient way to remove items.
+    # Use a list comprehension to build a new list without the target shortcut
     new_content = [
         item for item in content
         if not (
             item.get("type") == "shortcut"
             and item.get("data", {}).get("shortcut_name") == shortcut_to_remove
         )
-    ] 
+    ]
 
-    # Only save if a change was actually made.
+    # Only save if a change was actually made
     if len(new_content) < len(content):
         workspace.content = json.dumps(new_content)
         workspace.save(ignore_permissions=True)
         frappe.db.commit()
-        frappe.logger("Custom App").info(f"Successfully removed '{shortcut_to_remove}' shortcut from Accounting workspace.")
+        frappe.logger("Custom App").info(f"Successfully removed '{shortcut_to_remove}' from {workspace_name} workspace.")
     else:
-        frappe.logger("Custom App").info(f"'{shortcut_to_remove}' shortcut not found in Accounting workspace, no changes made.")
+        frappe.logger("Custom App").info(f"'{shortcut_to_remove}' not found in {workspace_name} workspace, no changes made.")
 
 
 
