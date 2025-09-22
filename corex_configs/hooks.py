@@ -16,7 +16,7 @@ app_include_css = "/assets/corex_configs/css/corex_theme.css"
 website_context = {
     "favicon": "/assets/corex_configs/images/corex_favicon.png",
     "app_name": "Corex",
-    "splash_image": "/assets/corex_configs/images/corex_logo.png",
+    "splash_image": "/assets/corex_configs/images/corex-logo-white.png",
 }
 
 

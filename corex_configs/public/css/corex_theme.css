@@ -474,6 +474,7 @@
 [data-fieldname="enable_onboarding"],
 [data-fieldname="hide_footer_in_auto_email_reports"],
 [data-fieldname="disable_system_update_notification"],
-[data-fieldname="telemetry_section"] {
+[data-fieldname="telemetry_section"],
+#website-theme-stylesheet_section [data-fieldname="apps"] {
   display: none;
 }
