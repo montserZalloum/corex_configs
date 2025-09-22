@@ -34,6 +34,12 @@ def modify_shortcuts():
         workspace_name="Projects", 
         shortcut_to_remove="Learn Project Management"
     )
+    
+    # Remove 'Learn Procurement' from the Buying workspace
+    _remove_shortcut_from_workspace(
+        workspace_name="Buying", 
+        shortcut_to_remove="Learn Procurement"
+    )
 
 def _remove_shortcut_from_workspace(workspace_name, shortcut_to_remove):
     """
