@@ -130,3 +130,28 @@ def disable_email_footer():
             message=f"Failed to disable standard email footer: {e}"
         )
 
+
+
+
+def add_website_redirects_to_landing_page():
+    """Adds a redirect from /apps to /landing in Website Settings."""
+    website_settings = frappe.get_doc('Website Settings')
+
+    # Check if the redirect already exists
+    redirect_exists = False
+    for redirect in website_settings.get('route_redirects'):
+        if redirect.source == '/apps' and redirect.target == '/landing':
+            redirect_exists = True
+            break
+
+    # If the redirect does not exist, add it
+    if not redirect_exists:
+        website_settings.append('route_redirects', {
+            'source': '/apps',
+            'target': '/landing'
+        })
+        website_settings.save(ignore_permissions=True)
+        frappe.db.commit()
+        print("Successfully added /apps to /landing redirect.")
+    else:
+        print("/apps to /landing redirect already exists.")

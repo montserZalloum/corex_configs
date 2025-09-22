@@ -35,7 +35,8 @@ after_migrate = [
     "corex_configs.utils.modify_shortcuts",
     "corex_configs.utils.disable_update_notification",
     "corex_configs.utils.disable_email_footer",
-    "corex_configs.utils.disable_onboarding_module"
+    "corex_configs.utils.disable_onboarding_module",
+    "corex_configs.utils.add_website_redirects_to_landing_page"
 ]
 on_session_creation = "corex_configs.auth.on_login_redirect"
 
