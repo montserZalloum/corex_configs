@@ -40,6 +40,12 @@ def modify_shortcuts():
         workspace_name="Buying", 
         shortcut_to_remove="Learn Procurement"
     )
+    
+    # Remove 'Documentation' from the lms workspace
+    _remove_shortcut_from_workspace(
+        workspace_name="LMS", 
+        shortcut_to_remove="Documentation"
+    )
 
 def _remove_shortcut_from_workspace(workspace_name, shortcut_to_remove):
     """
