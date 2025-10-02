@@ -17,6 +17,9 @@
     padding-bottom: 40px;
     min-height: calc(100vh - 160px);
 }
+#body > .page-container {
+  border-radius: 0 0 20px 20px;
+}
 /* .corex-layout #body {
   height: calc(100vh - 90px);
   overflow-y: auto;
