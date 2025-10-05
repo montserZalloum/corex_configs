@@ -186,24 +186,30 @@ def disable_email_footer():
 
 
 def add_website_redirects_to_landing_page():
-    """Adds a redirect from /apps to /landing in Website Settings."""
+    """Adds redirects from /apps and /app to /landing in Website Settings."""
     website_settings = frappe.get_doc('Website Settings')
 
-    # Check if the redirect already exists
-    redirect_exists = False
-    for redirect in website_settings.get('route_redirects'):
-        if redirect.source == '/apps' and redirect.target == '/landing':
-            redirect_exists = True
-            break
+    # Define the redirects to add
+    redirects_to_add = [
+        {'source': '/apps', 'target': '/landing'},
+        {'source': '/app', 'target': '/landing'}
+    ]
 
-    # If the redirect does not exist, add it
-    if not redirect_exists:
-        website_settings.append('route_redirects', {
-            'source': '/apps',
-            'target': '/landing'
-        })
-        website_settings.save(ignore_permissions=True)
-        frappe.db.commit()
-        print("Successfully added /apps to /landing redirect.")
-    else:
-        print("/apps to /landing redirect already exists.")
+    # Check and add each redirect if it doesn't exist
+    for redirect_config in redirects_to_add:
+        redirect_exists = False
+        for redirect in website_settings.get('route_redirects'):
+            if redirect.source == redirect_config['source'] and redirect.target == redirect_config['target']:
+                redirect_exists = True
+                break
+
+        # If the redirect does not exist, add it
+        if not redirect_exists:
+            website_settings.append('route_redirects', redirect_config)
+            print(f"Successfully added {redirect_config['source']} to {redirect_config['target']} redirect.")
+        else:
+            print(f"{redirect_config['source']} to {redirect_config['target']} redirect already exists.")
+
+    # Save once after all redirects are added
+    website_settings.save(ignore_permissions=True)
+    frappe.db.commit()

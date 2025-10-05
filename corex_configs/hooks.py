@@ -22,8 +22,10 @@ website_context = {
 
 doc_events = {
     "Website Settings": {
-        "before_save": "corex_configs.overrides.powered_by_footer",
-        "before_save": "corex_configs.overrides.powered_by_footer.app_name"
+        "before_save": [
+            "corex_configs.overrides.powered_by_footer.powered_by_footer",
+            "corex_configs.overrides.powered_by_footer.app_name"
+        ]
     }
 }
 
@@ -36,7 +38,8 @@ after_migrate = [
     "corex_configs.utils.disable_update_notification",
     "corex_configs.utils.disable_email_footer",
     "corex_configs.utils.disable_onboarding_module",
-    "corex_configs.utils.add_website_redirects_to_landing_page"
+    "corex_configs.utils.add_website_redirects_to_landing_page",
+    "corex_configs.overrides.powered_by_footer.apply_website_settings"
 ]
 on_session_creation = "corex_configs.auth.on_login_redirect"
 
