@@ -474,11 +474,20 @@
 .custom-back-btn-in-header:hover {
   background: #e0e0e0;
 }
+.checkbox [data-unit="ERPNext Integrations"] + span[data-unit="ERPNext Integrations"] {
+  font-size: 0;
+}
+.checkbox [data-unit="ERPNext Integrations"] + span[data-unit="ERPNext Integrations"]:after {
+  content: 'Corex Integrations';
+  font-size: 13px;
+}
 [data-fieldname="disable_standard_email_footer"],
 [data-fieldname="enable_onboarding"],
 [data-fieldname="hide_footer_in_auto_email_reports"],
 [data-fieldname="disable_system_update_notification"],
 [data-fieldname="telemetry_section"],
-#website-theme-stylesheet_section [data-fieldname="apps"] {
+#website-theme-stylesheet_section [data-fieldname="apps"],
+[data-fieldname="app_section"],
+[href^="https://docs.frappe.io"] {
   display: none;
 }
