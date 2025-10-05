@@ -455,7 +455,8 @@
 
   
 .dropdown-menu.dropdown-menu-right .dropdown-item[href="/apps"],
-.navbar .dropdown-help{
+.navbar .dropdown-help,
+#system-settings-app_tab-tab[data-fieldname="app_tab"]{
   display: none !important;
 }
 .custom-back-btn-in-header {
