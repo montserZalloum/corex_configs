@@ -8,10 +8,13 @@
 }
 .main-section {
     border-radius: 20px;
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 100%;
     max-width: 1290px;
     margin-inline: auto;
+}
+.main-section .sticky-top .navbar {
+  border-radius: 20px 20px 0 0;
 }
 .corex-layout .main-section .page-content > .layout-main {
     padding-bottom: 40px;
