@@ -73,6 +73,9 @@ def get_context(context):
                 workspace_link = f"/app/{frappe.utils.slug(display_name)}"
             else:
                 workspace_link = f"/app/private/{frappe.utils.slug(display_name)}"
+
+            if display_name.lower() == "raven":
+                workspace_link = "/raven"
         
         sidebar_items.append({
             "name": translated_display_name,  # Use translated name
