@@ -491,6 +491,7 @@
 [data-fieldname="telemetry_section"],
 #website-theme-stylesheet_section [data-fieldname="apps"],
 [data-fieldname="app_section"],
-[href^="https://docs.frappe.io"] {
+[href^="https://docs.frappe.io"],
+[href^="https://frappecloud.com"] {
   display: none;
 }
