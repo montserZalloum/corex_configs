@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 function setLandingPageLink__LogoHeader() {
     if (document.querySelector('.navbar-brand.navbar-home')) {
-        document.querySelector('.navbar-brand.navbar-home').setAttribute('href', '/landing');
+        document.querySelector('.navbar-brand.navbar-home').setAttribute('href', '/app/landing');
     }
 }
 
@@ -95,7 +95,7 @@ function createBackButton() {
             window.history.back();
         } else {
             // If no history, redirect to home/dashboard
-            window.location.href = '/landing';
+            window.location.href = '/app/landing';
         }
     });
     

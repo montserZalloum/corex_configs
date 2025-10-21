@@ -186,13 +186,13 @@ def disable_email_footer():
 
 
 def add_website_redirects_to_landing_page():
-    """Adds redirects from /apps and /app to /landing in Website Settings."""
+    """Adds redirects from /apps and /app to /app/landing in Website Settings."""
     website_settings = frappe.get_doc('Website Settings')
 
     # Define the redirects to add
     redirects_to_add = [
-        {'source': '/apps', 'target': '/landing'},
-        {'source': '/app', 'target': '/landing'}
+        {'source': '/apps', 'target': '/app/landing'},
+        {'source': '/app', 'target': '/app/landing'}
     ]
 
     # Check and add each redirect if it doesn't exist
