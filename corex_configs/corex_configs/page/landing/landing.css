@@ -3,6 +3,9 @@
     align-items: center;
     padding-top: 50px;
 }
+[data-route="landing"] .layout-main-section {
+    margin-inline: auto;
+}
 .module-cards-container {
     display: flex;
     flex-wrap: wrap;

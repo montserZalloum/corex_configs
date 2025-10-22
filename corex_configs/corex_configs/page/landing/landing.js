@@ -46,6 +46,19 @@ frappe.pages['landing'].on_page_load = function(wrapper) {
                     container.append(card);
                 });
 
+                // Add Customer shortcut
+                const customer_card = $(`
+					<a href="/app/customer" class="app-icon">
+						<div class="icon-inner">
+							<svg class="icon  icon-md" fill="currentColor" aria-hidden="true">
+								<use class="" href="#icon-users"></use>
+							</svg>
+						</div>
+						<span class="app-label">Customer</span>
+					</a>
+                `);
+                container.append(customer_card);
+
             } else {
                 container.html('<p>No navigation items were found.</p>');
             }

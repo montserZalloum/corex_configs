@@ -2,6 +2,17 @@ import frappe
 import os
 import shutil
 
+def create_landing_page():
+    if not frappe.db.exists("Page", "landing"):
+        frappe.get_doc({
+            "doctype": "Page",
+            "page_name": "landing",
+            "module": "Corex Configs",
+            "standard": 1,
+            "title": "Landing"
+        }).insert(ignore_permissions=True)
+        frappe.db.commit()
+
 def set_default_logo():
 	"""Set default logo in Navbar Settings if not already set"""
 	if not frappe.db.get_single_value("Navbar Settings", "app_logo"):
