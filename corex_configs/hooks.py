@@ -47,6 +47,34 @@ after_migrate = [
 ]
 on_session_creation = "corex_configs.auth.on_login_redirect"
 fixtures = ["Navbar Settings"]
+
+
+# Scheduled Tasks
+# ---------------
+scheduler_events = {
+    "daily": [
+        "corex_configs.tasks.check_expiring_contracts.check_contracts"
+    ]
+}
+# scheduler_events = {
+# 	"all": [
+# 		"corex_configs.tasks.all"
+# 	],
+# 	"daily": [
+# 		"corex_configs.tasks.daily"
+# 	],
+# 	"hourly": [
+# 		"corex_configs.tasks.hourly"
+# 	],
+# 	"weekly": [
+# 		"corex_configs.tasks.weekly"
+# 	],
+# 	"monthly": [
+# 		"corex_configs.tasks.monthly"
+# 	],
+# }
+
+
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
@@ -184,26 +212,6 @@ fixtures = ["Navbar Settings"]
 # 	}
 # }
 
-# Scheduled Tasks
-# ---------------
-
-# scheduler_events = {
-# 	"all": [
-# 		"corex_configs.tasks.all"
-# 	],
-# 	"daily": [
-# 		"corex_configs.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"corex_configs.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"corex_configs.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"corex_configs.tasks.monthly"
-# 	],
-# }
 
 # Testing
 # -------
