@@ -1,3 +1,4 @@
+#bench --site zain.conanacademy.com execute corex_configs.tasks.check_expiring_contracts.check_contracts
 import frappe
 from frappe.utils import today, add_days, formatdate, getdate
 
