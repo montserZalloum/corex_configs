@@ -2,7 +2,6 @@
   position: relative;
   overflow-x: hidden;
   background: linear-gradient(135deg, #1a0233 0%, #4a1a4a 25%, #2d1b69 50%, #8b5cf6 75%, #ec4899 100%);
-  background: linear-gradient(135deg, #1a0233 0%, #4a1a4a 25%, #2d1b69 50%, #8b5cf6 75%, #ec4899 100%);
   padding: 20px;
   min-height: calc(100vh);
 }

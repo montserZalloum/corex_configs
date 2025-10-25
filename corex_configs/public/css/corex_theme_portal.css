@@ -1,0 +1,18 @@
+/* .main-section {
+    height:auto;
+} */
+.main-section > .container {
+    background-color: var(--bg-color);
+}
+.main-section > .navbar {
+    border-radius: 20px 20px 0 0;
+}
+.main-section .web-footer {
+    border-radius: 0 0 20px 20px;
+}
+.cosmic-glow {
+    position:fixed;
+}
+.co-meteor + .star {
+    position:fixed;
+}
