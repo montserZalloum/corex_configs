@@ -45,8 +45,8 @@ def check_contracts():
             )
 
 def send_expiry_notification(customer_doc, recipient_user, subject, message):
-    """Helper function to send both System Notification and Email."""
-    
+    """Helper function to send System Notification."""
+
     # Create the in-system notification (bell icon)
     notification = frappe.new_doc("Notification Log")
     notification.for_user = recipient_user
@@ -55,18 +55,5 @@ def send_expiry_notification(customer_doc, recipient_user, subject, message):
     notification.subject = subject
     notification.insert(ignore_permissions=True)
 
-    # Get the recipient's email address
-    recipient_email = frappe.db.get_value("User", recipient_user, "email")
-
-    # Send the email
-    if recipient_email:
-        frappe.sendmail(
-            recipients=recipient_email,
-            subject=subject,
-            message=message,
-            reference_doctype="Customer",
-            reference_name=customer_doc.name
-        )
-    
     # Commit the changes to the database
     frappe.db.commit()
