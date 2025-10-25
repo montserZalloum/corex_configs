@@ -256,23 +256,9 @@
     max-height: 45px !important;
 }
 
-[data-route="landing"] header.navbar .navbar-home img {
-    visibility: hidden;
-}
-
-[data-route="landing"] header.navbar .navbar-home {
-    position: relative;
-}
-
 [data-route="landing"] header.navbar .navbar-home:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background: url("/assets/corex_configs/images/corex-logo-white.png") no-repeat center center;
-    background-size: auto 45px;
+    background-size: 103px 30px;
 }
 
 [data-route="landing"] header.navbar .search-bar .awesomplete input::placeholder {

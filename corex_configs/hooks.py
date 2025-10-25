@@ -10,7 +10,8 @@ app_license = "mit"
 # ------------------
 app_include_js = [
     "/assets/corex_configs/js/custom_header.js",
-    "/assets/corex_configs/js/kanban_default_view.js"
+    "/assets/corex_configs/js/kanban_default_view.js",
+    "/assets/corex_configs/js/customer_contract_tab.js"
 ]
 app_include_css = "/assets/corex_configs/css/corex_theme.css"
 website_context = {
@@ -33,6 +34,7 @@ web_include_js = "assets/corex_configs/js/login_redirect.js"
 after_migrate = [
     "corex_configs.overrides.corex_translations.setup_corex_translations",
     "corex_configs.setup.create_landing_page",
+    "corex_configs.custom.customer_contracts_tab.add_customer_contract_fields",
     "corex_configs.setup.set_default_logo",
     "corex_configs.setup.replace_default_logo",
     "corex_configs.utils.modify_shortcuts",
@@ -44,7 +46,6 @@ after_migrate = [
     "corex_configs.overrides.powered_by_footer.apply_website_settings",
 ]
 on_session_creation = "corex_configs.auth.on_login_redirect"
-
 fixtures = ["Navbar Settings"]
 # required_apps = []
 
