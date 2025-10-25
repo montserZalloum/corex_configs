@@ -456,7 +456,10 @@
     }
   }
 
-  
+  .after-save .new-timeline .activity-title {
+    border-radius: 12px;
+    padding: 0px 12px;
+  }
 .dropdown-menu.dropdown-menu-right .dropdown-item[href="/apps"],
 .navbar .dropdown-help,
 #system-settings-app_tab-tab[data-fieldname="app_tab"]{

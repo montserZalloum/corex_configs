@@ -248,8 +248,8 @@
     border: 0;
 }
 
-[data-route="landing"] header.navbar .navbar-nav {
-    display: none;
+[data-route="landing"] header.navbar .navbar-nav .notifications-icon {
+    filter: brightness(0) invert(1);
 }
 
 [data-route="landing"] header.navbar .navbar-home img {
