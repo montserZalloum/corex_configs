@@ -213,3 +213,102 @@ def add_website_redirects_to_landing_page():
     # Save once after all redirects are added
     website_settings.save(ignore_permissions=True)
     frappe.db.commit()
+
+
+def cleanup_gender_doctype():
+    """
+    Removes all Gender entries except 'Male' and 'Female'.
+    This is run after migration to ensure only these two genders remain in the system.
+
+    Uses an idempotency flag to prevent re-running if migration has already been executed.
+    """
+    try:
+        # Step 1: Create the custom field if it doesn't exist
+        _create_gender_cleanup_flag_field()
+
+        # Step 2: Check if this migration has already been executed
+        migration_flag = frappe.db.get_single_value("System Settings", "gender_cleanup_done")
+
+        if migration_flag == 1:
+            frappe.logger("corex_configs").info("Gender cleanup migration has already been executed. Skipping...")
+            return
+
+        # Step 3: Define the genders we want to keep
+        allowed_genders = ["Male", "Female"]
+
+        # Step 4: Get all existing Gender documents
+        all_genders = frappe.get_all("Gender", fields=["name"])
+
+        deleted_count = 0
+
+        # Step 5: Delete all genders except Male and Female
+        for gender in all_genders:
+            if gender.name not in allowed_genders:
+                try:
+                    frappe.delete_doc("Gender", gender.name, force=True, ignore_permissions=True)
+                    deleted_count += 1
+                except Exception as delete_error:
+                    frappe.log_error(
+                        title="Gender Cleanup Error (corex_configs)",
+                        message=f"Failed to delete gender '{gender.name}'. Error: {delete_error}"
+                    )
+
+        # Step 6: Commit the changes
+        frappe.db.commit()
+
+        # Step 7: Set the flag to indicate this migration has been executed
+        frappe.db.set_single_value("System Settings", "gender_cleanup_done", 1)
+        frappe.db.commit()
+
+        frappe.log_error(
+            title="Gender Cleanup Success (corex_configs)",
+            message=f"Gender cleanup completed successfully. Deleted {deleted_count} gender entries."
+        )
+
+    except Exception as e:
+        # Log any potential errors
+        frappe.log_error(
+            title="Gender Cleanup Error (corex_configs)",
+            message=f"Failed to cleanup Gender DocType. Error: {e}"
+        )
+
+
+def _create_gender_cleanup_flag_field():
+    """
+    Helper function to create the custom field 'gender_cleanup_done' in System Settings
+    if it doesn't already exist.
+    """
+    try:
+        # Check if the custom field already exists
+        field_exists = frappe.db.exists(
+            "Custom Field",
+            {
+                "dt": "System Settings",
+                "fieldname": "gender_cleanup_done"
+            }
+        )
+
+        if not field_exists:
+            # Create the custom field
+            custom_field = frappe.get_doc({
+                "doctype": "Custom Field",
+                "dt": "System Settings",
+                "fieldname": "gender_cleanup_done",
+                "fieldtype": "Check",
+                "label": "Gender Cleanup Done",
+                "read_only": 1,
+                "no_copy": 1,
+                "hidden": 1,
+                "insert_after": "enable_onboarding"
+            })
+            custom_field.insert(ignore_permissions=True)
+            frappe.db.commit()
+            frappe.logger("corex_configs").info("Custom field 'gender_cleanup_done' created successfully.")
+        else:
+            frappe.logger("corex_configs").info("Custom field 'gender_cleanup_done' already exists.")
+
+    except Exception as e:
+        frappe.log_error(
+            title="Gender Cleanup Field Creation Error (corex_configs)",
+            message=f"Failed to create custom field 'gender_cleanup_done'. Error: {e}"
+        )

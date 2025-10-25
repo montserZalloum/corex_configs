@@ -14,10 +14,7 @@ def setup_corex_translations():
     # ("ERPNext Integrations", "Corex Integrations"),
     ("Frappe Light", "Corex Light"),
     ("Timeless Night", "Corex Night"),
-
-    # Add any other translations you need here
-    # ("Accounts", "Finance"),
-    # ("Buying", "Procurement"),
+    ("Activity", "Timeline"),
   ]
 
   # Set the language for which you want to add translations

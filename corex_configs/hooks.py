@@ -40,6 +40,7 @@ after_migrate = [
     "corex_configs.utils.disable_email_footer",
     "corex_configs.utils.disable_onboarding_module",
     "corex_configs.utils.add_website_redirects_to_landing_page",
+    "corex_configs.utils.cleanup_gender_doctype",
     "corex_configs.overrides.powered_by_footer.apply_website_settings",
 ]
 on_session_creation = "corex_configs.auth.on_login_redirect"
