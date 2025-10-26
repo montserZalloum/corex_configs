@@ -17,8 +17,11 @@ app_include_css = "/assets/corex_configs/css/corex_theme.css"
 website_context = {
     "favicon": "/assets/corex_configs/images/corex_favicon.png",
     "app_name": "Corex",
-    "splash_image": "/assets/corex_configs/images/corex-logo-white.png",
+    "splash_image": "/assets/corex_configs/images/corex-logo-white.png"
 }
+
+# Portal context hook
+update_website_context = "corex_configs.utils.get_portal_context"
 
 
 doc_events = {
@@ -35,6 +38,7 @@ after_migrate = [
     "corex_configs.overrides.corex_translations.setup_corex_translations",
     "corex_configs.setup.create_landing_page",
     "corex_configs.custom.customer_contracts_tab.add_customer_contract_fields",
+    "corex_configs.custom.web_page.add_web_page_fields",
     "corex_configs.setup.set_default_logo",
     "corex_configs.setup.replace_default_logo",
     "corex_configs.utils.modify_shortcuts",

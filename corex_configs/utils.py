@@ -312,3 +312,34 @@ def _create_gender_cleanup_flag_field():
             title="Gender Cleanup Field Creation Error (corex_configs)",
             message=f"Failed to create custom field 'gender_cleanup_done'. Error: {e}"
         )
+
+
+def get_portal_context(context):
+    """
+    Dynamically sets the body class based on a custom field in the "Web Page" DocType
+    for the currently viewed page.
+    """
+    try:
+        current_route = frappe.request.path.strip('/') or 'index'
+
+        use_standard_theme = frappe.db.get_value(
+            "Web Page",
+            filters={"route": current_route},
+            fieldname="is_portal_use_standard_theme"
+        )
+
+        if use_standard_theme == 1:
+            theme_class = 'standard-theme'
+        else:
+            theme_class = 'corex-theme'
+
+        existing_classes = context.get('body_class', '')
+        context['body_class'] = f'{existing_classes} {theme_class}'.strip()
+
+    except Exception as e:
+        frappe.log_error(f"Error in get_portal_context: {e}", "Portal Context Error")
+        # في حالة حدوث أي خطأ، يتم تطبيق كلاس احتياطي
+        existing_classes = context.get('body_class', 'corex-theme')
+        context['body_class'] = f'{existing_classes} fallback-theme'.strip()
+
+    return context

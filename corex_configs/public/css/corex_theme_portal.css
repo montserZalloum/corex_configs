@@ -1,18 +1,19 @@
 /* .main-section {
     height:auto;
 } */
-.main-section > .container {
+.corex-theme .main-section > .container,
+.corex-theme .section {
     background-color: var(--bg-color);
 }
-.main-section > .navbar {
+.corex-theme .main-section > .navbar {
     border-radius: 20px 20px 0 0;
 }
-.main-section .web-footer {
+.corex-theme .main-section .web-footer {
     border-radius: 0 0 20px 20px;
 }
-.cosmic-glow {
+.corex-theme .cosmic-glow {
     position:fixed;
 }
-.co-meteor + .star {
+.corex-theme .co-meteor + .star {
     position:fixed;
 }

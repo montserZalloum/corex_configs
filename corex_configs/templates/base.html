@@ -33,8 +33,10 @@
 			<style>{{ colocated_css }}</style>
 		{%- endif %}
 	{%- endblock -%}
+	{% if body_class and 'corex-theme' in body_class %}
 	<link rel="stylesheet" href="/assets/corex_configs/css/corex_theme.css" />
 	<link rel="stylesheet" href="/assets/corex_configs/css/corex_theme_portal.css" />
+	{% endif %}
 	{% if boot.lang == "eo" %}
 	<script type="text/javascript">
 		var _jipt = [];
@@ -58,7 +60,9 @@
 	{% include "public/icons/timeless/icons.svg" %}
 	{% include "public/icons/espresso/icons.svg" %}
 	<div class="corex-layout">
+		{% if body_class and 'corex-theme' in body_class %}
 		{% include "templates/includes/corex_bg.html" %}
+		{% endif %}
 		<div class="main-section">
 		{%- block banner -%}
 		{% include "templates/includes/banner_extension.html" ignore missing %}
