@@ -46,6 +46,18 @@ def modify_shortcuts():
         workspace_name="LMS", 
         shortcut_to_remove="Documentation"
     )
+    
+    # Remove 'Browse Apps' from the lms workspace
+    _remove_shortcut_from_workspace(
+        workspace_name="Corex Integrations", 
+        shortcut_to_remove="Browse Apps"
+    )
+    
+    # Remove 'Browse Apps' from the lms workspace
+    _remove_shortcut_from_workspace(
+        workspace_name="ERPNext Integrations", 
+        shortcut_to_remove="Browse Apps"
+    )
 
 def _remove_shortcut_from_workspace(workspace_name, shortcut_to_remove):
     """
