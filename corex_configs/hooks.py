@@ -19,7 +19,10 @@ website_context = {
     "app_name": "Corex",
     "splash_image": "/assets/corex_configs/images/corex-logo-white.png"
 }
-
+web_include_js = [
+    "assets/corex_configs/js/login_redirect.js",
+    "assets/corex_configs/js/portal/quotation.js"
+]
 # Portal context hook
 update_website_context = "corex_configs.utils.get_portal_context"
 
@@ -33,7 +36,7 @@ doc_events = {
     }
 }
 
-web_include_js = "assets/corex_configs/js/login_redirect.js"
+
 after_migrate = [
     "corex_configs.overrides.corex_translations.setup_corex_translations",
     "corex_configs.setup.create_landing_page",

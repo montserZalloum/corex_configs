@@ -1,8 +1,9 @@
-/* .main-section {
+.main-section {
     height:auto;
-} */
-.corex-theme .main-section > .container,
-.corex-theme .section {
+}
+/* .corex-theme .main-section > .container,
+.corex-theme .section, */
+.corex-theme .main-section {
     background-color: var(--bg-color);
 }
 .corex-theme .main-section > .navbar {
@@ -16,4 +17,18 @@
 }
 .corex-theme .co-meteor + .star {
     position:fixed;
+}
+.corex-theme .web-form,
+.corex-theme .web-list-container {
+    position: relative;
+}
+.corex-theme .web-list-container {
+    background-color: var(--bg-color);
+}
+.corex-theme .main-section{
+    min-height: 100%;
+}
+.corex-theme[data-path="login"] .login-content {
+    background-color: #fff;
+    position:relative
 }
