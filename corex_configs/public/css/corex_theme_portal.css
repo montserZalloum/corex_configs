@@ -28,7 +28,41 @@
 .corex-theme .main-section{
     min-height: 100%;
 }
+.corex-theme[data-path="login"] .main-section {
+    background-color: transparent
+}
 .corex-theme[data-path="login"] .login-content {
     background-color: #fff;
     position:relative
+}
+.corex-theme[data-path="login"] .page-card-head {
+    position: relative;
+}
+.corex-theme[data-path="login"] .page-card-head h4{
+    color: #fff;
+}
+.corex-theme[data-path="login"] .app-logo{
+    visibility: hidden;
+    height: 42px;
+    width: 155px;
+}
+.corex-theme[data-path="login"]  .page-card-head:before {
+    content: '';
+    position: absolute;
+    top: 41px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+    height: 50px;
+    background: url("/assets/corex_configs/images/corex-logo-white.png") no-repeat center center;
+    background-size: 100%;
+}
+.corex-theme[data-path="login"] .main-section > .navbar {
+    border-radius: 20px;
+}
+@media (max-width: 776px) {
+    .corex-theme[data-path="login"]  .page-card-head:before {
+        top: 10px;
+    }
 }
