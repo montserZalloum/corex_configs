@@ -61,6 +61,15 @@
 .corex-theme[data-path="login"] .main-section > .navbar {
     border-radius: 20px;
 }
+.corex-theme .web-form-container .form-section {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.corex-theme .web-form-container .web-form-header {
+    position: relative;
+}
 @media (max-width: 776px) {
     .corex-theme[data-path="login"]  .page-card-head:before {
         top: 10px;
