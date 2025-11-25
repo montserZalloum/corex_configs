@@ -24,7 +24,7 @@ web_include_js = [
     "assets/corex_configs/js/portal/quotation.js"
 ]
 # Portal context hook
-update_website_context = "corex_configs.utils.get_portal_context"
+# update_website_context = "corex_configs.utils.get_portal_context"
 
 
 doc_events = {
@@ -39,20 +39,15 @@ doc_events = {
 
 after_migrate = [
     "corex_configs.overrides.corex_translations.setup_corex_translations",
-    "corex_configs.setup.create_landing_page",
     "corex_configs.custom.customer_contracts_tab.add_customer_contract_fields",
     "corex_configs.custom.web_page.add_web_page_fields",
-    "corex_configs.setup.set_default_logo",
-    "corex_configs.setup.replace_default_logo",
     "corex_configs.utils.modify_shortcuts",
     "corex_configs.utils.disable_update_notification",
     "corex_configs.utils.disable_email_footer",
     "corex_configs.utils.disable_onboarding_module",
-    "corex_configs.utils.add_website_redirects_to_landing_page",
     "corex_configs.utils.cleanup_gender_doctype",
     "corex_configs.overrides.powered_by_footer.apply_website_settings",
 ]
-on_session_creation = "corex_configs.auth.on_login_redirect"
 fixtures = ["Navbar Settings"]
 
 

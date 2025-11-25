@@ -197,34 +197,6 @@ def disable_email_footer():
 
 
 
-def add_website_redirects_to_landing_page():
-    """Adds redirects from /apps and /app to /app/landing in Website Settings."""
-    website_settings = frappe.get_doc('Website Settings')
-
-    # Define the redirects to add
-    redirects_to_add = [
-        {'source': '/apps', 'target': '/app/landing'},
-        {'source': '/app', 'target': '/app/landing'}
-    ]
-
-    # Check and add each redirect if it doesn't exist
-    for redirect_config in redirects_to_add:
-        redirect_exists = False
-        for redirect in website_settings.get('route_redirects'):
-            if redirect.source == redirect_config['source'] and redirect.target == redirect_config['target']:
-                redirect_exists = True
-                break
-
-        # If the redirect does not exist, add it
-        if not redirect_exists:
-            website_settings.append('route_redirects', redirect_config)
-            print(f"Successfully added {redirect_config['source']} to {redirect_config['target']} redirect.")
-        else:
-            print(f"{redirect_config['source']} to {redirect_config['target']} redirect already exists.")
-
-    # Save once after all redirects are added
-    website_settings.save(ignore_permissions=True)
-    frappe.db.commit()
 
 
 def cleanup_gender_doctype():
@@ -242,7 +214,7 @@ def cleanup_gender_doctype():
         migration_flag = frappe.db.get_single_value("System Settings", "gender_cleanup_done")
 
         if migration_flag == 1:
-            frappe.logger("corex_configs").info("Gender cleanup migration has already been executed. Skipping...")
+            # frappe.logger("corex_configs").info("Gender cleanup migration has already been executed. Skipping...")
             return
 
         # Step 3: Define the genders we want to keep

@@ -5,4 +5,3 @@
 # Patches added in this section will be executed after doctypes are migrated
 
 corex_configs.patches.patch_powered_by_footer_2
-corex_configs.patches.set_kanban_default_view_3
