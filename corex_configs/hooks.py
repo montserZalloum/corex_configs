@@ -9,18 +9,14 @@ app_license = "mit"
 # Apps
 # ------------------
 app_include_js = [
-    "/assets/corex_configs/js/custom_header.js",
-    "/assets/corex_configs/js/kanban_default_view.js",
     "/assets/corex_configs/js/customer_contract_tab.js"
 ]
 app_include_css = "/assets/corex_configs/css/corex_theme.css"
 website_context = {
     "favicon": "/assets/corex_configs/images/corex_favicon.png",
     "app_name": "Corex",
-    "splash_image": "/assets/corex_configs/images/corex-logo-white.png"
 }
 web_include_js = [
-    "assets/corex_configs/js/login_redirect.js",
     "assets/corex_configs/js/portal/quotation.js"
 ]
 # Portal context hook
