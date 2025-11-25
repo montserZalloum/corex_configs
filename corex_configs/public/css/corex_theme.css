@@ -19,6 +19,8 @@
 #website-theme-stylesheet_section [data-fieldname="apps"],
 [data-fieldname="app_section"],
 [href^="https://docs.frappe.io"],
-[href^="https://frappecloud.com"] {
+[href^="https://frappecloud.com"],
+#website-settings-navbar_tab [data-fieldname="splash_image"],
+#website-settings-navbar_tab [data-fieldname="favicon"] {
   display: none;
 }
