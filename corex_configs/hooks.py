@@ -19,6 +19,7 @@ website_context = {
 web_include_js = [
     "assets/corex_configs/js/portal/quotation.js"
 ]
+web_include_css = "/assets/corex_configs/css/portal.css"
 # Portal context hook
 # update_website_context = "corex_configs.utils.get_portal_context"
 
