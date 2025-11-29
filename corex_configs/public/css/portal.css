@@ -79,3 +79,6 @@ body[frappe-session-status] {
 .web-form-container [style="height: 3rem"]:empty {
   display: none;
 }
+.web-list-container {
+  background-color: #fff;
+}
