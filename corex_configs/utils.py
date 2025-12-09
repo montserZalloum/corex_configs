@@ -181,11 +181,6 @@ def disable_email_footer():
         frappe.db.set_default("disable_standard_email_footer", 1)
         frappe.db.commit()
         
-        # Log success
-        frappe.log_error(
-            title="Custom Email Footer (corex_configs)",
-            message="Successfully disabled standard email footer to remove ERPNext branding."
-        )
  
     except Exception as e:
         # Log any potential errors
@@ -244,10 +239,6 @@ def cleanup_gender_doctype():
         frappe.db.set_single_value("System Settings", "gender_cleanup_done", 1)
         frappe.db.commit()
 
-        frappe.log_error(
-            title="Gender Cleanup Success (corex_configs)",
-            message=f"Gender cleanup completed successfully. Deleted {deleted_count} gender entries."
-        )
 
     except Exception as e:
         # Log any potential errors
