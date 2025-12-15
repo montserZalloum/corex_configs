@@ -1,6 +1,6 @@
-/* Portal Custom Styling - Modern & Fancy Design */
-/* This stylesheet provides modern styling for the portal without affecting Frappe core */
-
+html[lang="ar"] body{
+  direction: rtl;
+}
 :root {
   --portal-primary: #6366f1;
   --portal-primary-dark: #4f46e5;
