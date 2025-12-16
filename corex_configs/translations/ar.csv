@@ -50,3 +50,66 @@ Member,عضو
 Member Image,صورة العضو
 Current Lesson, الدرس الحالي
 No {0} found with matching filters. Clear filters to see all {0}.,لا يوجد {0} مطابق للفلاتر المحددة. امسح الفلاتر لعرض جميع {0}.
+You haven't created a {0} yet,لم تقم بإنشاء {0} بعد.
+Documents,وثائق
+Create or Edit Print Format,إنشاء أو تعديل تنسيق الطباعة
+Choose a block or continue typing,اختر قسمًا أو تابع الكتابة
+Shortcut,إختصار
+Spacer,فاصل
+Quick List,قائمة سريعة
+Expand,توسيع
+Shrink,تقلص
+Move Up,تحريك للأعلى
+Move Down,تحريك للأسفل
+You created this document {0},قمت بإنشاء هذا المستند {0}.
+{0} created this document {1},قام {0} بإنشاء هذا المستند {1}.
+Export Import Log,سجل التصدير والاستيراد
+Showing only first {0} rows out of {1},يتم عرض أول {0} صف فقط من أصل {1}.
+Is Standard,هل هو قياسي
+Add Translate Data,أضف بيانات الترجمة
+Editing Row,تحرير الصف
+Insert Below,إضافة ادناه
+"Will add ""%"" before and after the query","سيتم إضافة ""%"" قبل وبعد الاستعلام"
+Serial No,الرقم التسلسلي
+Rejected Serial No,الرقم التسلسلي المرفوض
+ID,المعرف
+No.,رقم
+Clear Assignment,مسح التعيين
+Add Tags,إضافة وسوم
+No filters selected,لم يتم تحديد أي فلاتر
+Invalid filter: {0},فلتر غير صالح: {0}
+ascending,تصاعدي
+descending,تنازلي
+You Liked,أعجبك
+{0} Liked,أعجب {0}
+commented,علّق
+Open Communication,فتح التواصل
+Check to make this the default link that opens when workspace is accessed,حدد هذا الخيار لجعله الرابط الافتراضي الذي يفتح عند الوصول إلى مساحة العمل.
+Count Customization,تخصيص العد
+Color for the count badge when count > 0,لون شارة العد عندما يكون العدد > 0
+Add Link to Sidebar,إضافة رابط إلى الشريط الجانبي
+Link Type,نوع الرابط
+Is Default Link,هل هو إفتراضي
+Which view of the DocType should this link open?,أي عرض من أنواع المستندات يجب أن يفتحه هذا الرابط؟
+LMS Settings,إعدادات منصة التعلم
+Create a Course,إنشاء كورس
+Visit LMS Portal,زيارة بوابة منصة التعلم
+Master,ماستر
+Frappe Light,كوركس لايت
+Timeless Night,كوركس نايت
+Activity,النشاط
+Toggle Full Width,تبديل العرض الكامل
+Switch Theme,تبديل المظهر
+Automatic,تلقائي
+Theme Changed,تم تغيير المظهر
+Search for {0},ابحث عن {0}
+Qualification Status,حالة التأهيل
+Unqualified,غير مؤهل
+Qualified By,مؤهل من قِبَل
+Qualified on,تم التأهيل في
+No of Employees,عدد الموظفين
+Annual Revenue,الإيرادات السنوية
+You last edited this,آخر تعديل قمت به على هذا
+{0} last edited this,قام {0} بتحرير هذا آخر مرة
+Party User,مستخدم الجهة
+Party Full Name,الاسم الكامل للطرف
