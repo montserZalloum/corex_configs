@@ -10,6 +10,9 @@
   content: 'Corex Integrations';
   font-size: 13px;
 }
+[dir="rtl"] .chart-legend .legend-dot{
+  y:-22;
+}
 
 [data-fieldname="disable_standard_email_footer"],
 [data-fieldname="enable_onboarding"],
