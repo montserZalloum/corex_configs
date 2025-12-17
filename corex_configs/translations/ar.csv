@@ -119,3 +119,88 @@ Opportunity Value,قيمة الفرصة
 Contact Mobile,الهاتف المحمول
 Phone Ext.,الرقم الفرعي للهاتف
 Primary Address and Contact,العنوان الأساسي وبيانات الاتصال
+Profile Picture,صورة الملف الشخصي
+Clear,مسح
+Type a message...,اكتب رسالة...
+Total Active Items,إجمالي العناصر النشطة
+Total Warehouses,إجمالي المستودعات
+Total Stock Value,إجمالي قيمة المخزون
+Warehouse wise Stock Value,قيمة المخزون حسب المستودع
+Quick Access,وصول سريع
+{} Pending,{} قيد الانتظار
+{}  To Deliver,{} للتسليم
+{}  To Receive,{} للاستلام
+{} Assigned,{} مُسنَد
+{} Available,{} متاح
+{} To Bill,{} للدفع
+"Kg",كجم
+"Piece","قطعة"
+"Litre","لتر"
+"Box","صندوق"
+"Nos",عدد
+Show Aggregate Value from Subsidiary Companies,عرض القيمة الإجمالية من الشركات الفرعية
+New Lead (Last 1 Month),عميل محتمل جديد (آخر شهر)
+New Opportunity (Last 1 Month),فرص جديدة (آخر شهر)
+Won Opportunity (Last 1 Month),فرص رابحة (آخر شهر)
+Open Opportunity,فرص مفتوحة
+Incoming Leads,العملاء المحتملون الواردون
+Opportunity Trends,اتجاهات الفرص
+Won Opportunities,فرص رابحة
+Territory Wise Opportunity Count,عدد الفرص حسب المنطقة
+Opportunities via Campaigns,الفرص عبر الحملات
+Is Billing Contact,هل جهة الاتصال للدفع
+Prospect Owner,مالك العميل المحتمل
+No. of Employees,عدد الموظفين
+Leads,العملاء المحتملون
+Stage,المرحلة
+Deal Owner,مالك الصفقة
+Probability,الاحتمالية
+Closing,الإغلاق
+From Date is mandatory,تاريخ البداية إلزامي
+To Date is mandatory,تاريخ النهاية إلزامي
+Opportunity Source,مصدر الفرصة
+User Profile,ملف المستخدم
+Acceptance for Terms and/or Policies,الموافقة على الشروط و/أو السياسات
+Cover Image,صورة الغلاف
+User Category,فئة المستخدم
+Profession,المهنة
+Hide my Private Information from others,إخفاء معلوماتي الشخصية عن الآخرين
+Private Information includes your Grade and Work Environment Preferences,تشمل المعلومات الشخصية درجتك الوظيفية وتفضيلاتك لبيئة العمل
+I am looking for a job,أبحَث عن وظيفة
+Education Details,تفاصيل التعليم
+Work Experience Details,تفاصيل الخبرة العملية
+Work Experience,الخبرة العملية
+Volunteering or Internship,العمل التطوعي أو التدريب الداخلي
+Certification Details,تفاصيل الشهادة
+Certification Name,اسم الشهادة
+Skill Details,تفاصيل المهارات
+Career Preference Details,تفاصيل تفضيلات الوظيفة
+Preferred Functions,الوظائف المفضلة
+Preferred Industries,المجالات المفضلة
+Dream Companies,شركات الأحلام
+Preferred Location,الموقع المفضّل
+Location Preference,تفضيل الموقع
+Work Environment,بيئة العمل
+Attire Preference,تفضيلات الملابس
+Collaboration Preference,تفضيل التعاون
+Role Preference,تفضيل الدور
+Company Type,نوع الشركة
+Time Preference,تفضيل الوقت
+Translator,مترجِم
+Raven User,مستخدِم ريفن
+Raven Admin,مسؤول ريفن
+Moderator,مُشرِف
+Delivery User,مستخدِم توصيل
+Delivery Manager,مدير توصيل
+Course Creator,مُنشِئ كورس
+Batch Evaluator,مُقَيّم الدُّفعات
+Only if Creator,فقط إذا كان المُنشئ
+Energy Points,نقاط الطاقة
+Recent Activity,النشاط الأخير
+No activities to show,لا توجد أنشطة لعرضها
+Review Points,نقاط المراجعة
+Rank,رتبة
+Monthly Rank,الترتيب الشهري
+Points,نقاط
+No Items Found,لم يتم العثور على أي عناصر
+Change User,تغيير المستخدم

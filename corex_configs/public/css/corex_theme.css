@@ -13,6 +13,17 @@
 [dir="rtl"] .chart-legend .legend-dot{
   y:-22;
 }
+[dir="rtl"] .raven-chat{
+  right: auto;
+  left:60px;
+}
+[dir="rtl"] .raven-chat .back-button{
+  scale: -1;
+}
+[dir="rtl"] .raven-chat .raven-message-item-header{
+  display: flex;
+  align-items:center;
+}
 
 [data-fieldname="disable_standard_email_footer"],
 [data-fieldname="enable_onboarding"],

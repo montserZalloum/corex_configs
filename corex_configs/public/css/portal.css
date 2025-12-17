@@ -76,7 +76,8 @@ body[frappe-session-status] {
 .page-header-wrapper h3 {
   margin-top: 0;
 }
-.web-form-container [style="height: 3rem"]:empty {
+.web-form-container [style="height: 3rem"]:empty,
+[href="/apps"] {
   display: none;
 }
 .web-list-container {
