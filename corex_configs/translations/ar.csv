@@ -270,3 +270,16 @@ Sales Update Frequency in Company and Project,معدل تحديث المبيعا
 Blanket Order Allowance (%),نسبة السماح بأمر الشراء الشامل (%)
 Percentage you are allowed to sell beyond the Blanket Order quantity.,النسبة المسموح لك ببيعها فوق كمية أمر الشراء الشامل.
 "Standard Terms and Conditions that can be added to Sales and Purchases. Examples: Validity of the offer, Payment Terms, Safety and Usage, etc.","الشروط والأحكام القياسية التي يمكن إضافتها للمبيعات والمشتريات. أمثلة: صلاحية العرض، شروط الدفع، السلامة والاستخدام، إلخ."
+Portal Users,مستخدمو البوابة
+Internal Supplier,مُوَرِّد داخلي
+Supplier Primary Address,العنوان الرئيسي للمُوَرّد
+Supplier Primary Contact,جهة الاتصال الرئيسية للمُوَرّد
+Supplier Portal Users,مستخدمي بوابة المُوَرّدين
+Items to Order and Receive,العناصر للطلب والاستلام
+Include Closed Orders,تضمين الطلبات المغلقة
+Subcontracting Order,أمر التعاقد من الباطن
+Categorize by Supplier,التصنيف حسب المورد
+Categorize by Item,التصنيف حسب العنصر
+Expires today or already expired,ينتهي اليوم أو انتهت صلاحيته بالفعل
+Expires in a week or less,تنتهي الصلاحية خلال أسبوع أو أقل
+Categorize By,التصنيف حسب
