@@ -24,7 +24,10 @@
   display: flex;
   align-items:center;
 }
-
+@keyframes moveRightPacman {
+  0%   { left: -150px; }
+  100% { left: 240px; }
+}
 [data-fieldname="disable_standard_email_footer"],
 [data-fieldname="enable_onboarding"],
 [data-fieldname="hide_footer_in_auto_email_reports"],
