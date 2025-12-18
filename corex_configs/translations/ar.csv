@@ -382,3 +382,126 @@ Maximum Value,القيمة القصوى
 Enabled Items only,الأصناف المفعلة فقط
 Disabled Items only,الأصناف المعطلة فقط
 All Items,جميع الأصناف
+Non Depreciable Category,فئة غير قابلة للاستهلاك
+In Location,في الموقع
+Disposed,متخلص منه
+Only existing assets,الأصول الموجودة فقط
+Location-wise Asset Value,قيمة الأصول حسب الموقع
+Team,فريق
+Maintenance Details,تفاصيل الصيانة
+Asset Capitalization,رسملة الأصول
+Repair Details,تفاصيل الإصلاح
+Consumed Stock Items,أصناف المخزون المستهلكة
+Consumed Assets,الأصول المستهلكة
+Service Expenses,مصاريف الخدمات
+Capitalization Method,طريقة الرسملة
+Target Item Code,رمز الصنف المستهدف
+Target Asset,الأصل المستهدف
+BOM Creator,منشئ قائمة المواد (BOM)
+Forecasting,التنبؤ
+Plant Floor,أرضية المصنع
+Multi-level BOM Creator,منشئ قائمة المواد متعددة المستويات
+Item Code (Final Product),رمز الصنف (المنتج النهائي)
+Final Product,المنتج النهائي
+Sub Assemblies & Raw Materials,التجميعات الفرعية والمواد الخام
+Set Valuation Rate Based on Source Warehouse,تعيين معدل التقييم بناءً على مستودع المصدر
+Finished Goods Item,صِنف المنتجات التامة
+Is Expandable,قابل للتوسيع
+Instruction,تعليمات
+Parent Row No,رقم صف الأصل
+BOM Tree,شجرة قائمة المواد
+Cost Configuration,تهيئة التكلفة
+Do Not Explode,عدم التفكيك
+Is Stock Item,صنف مخزني
+Scrap & Process Loss,الخردة وفقد العمليات
+Process Loss,فقد العمليات
+% Process Loss,نسبة فقد العمليات
+Assembly Items,أصناف التجميع
+Sub Assembly Items,أصناف التجميع الفرعي
+Consolidate Sub Assembly Items,تجميع أصناف التجميع الفرعي
+Skip Available Sub Assembly Items,تخطي أصناف التجميع الفرعي المتوفرة
+Sub Assembly Warehouse,مستودع التجميع الفرعي
+"When a parent warehouse is chosen, the system conducts stock checks against the associated child warehouses",عند اختيار مستودع أب، يقوم النظام بالتحقق من المخزون في المستودعات التابعة المرتبطة به.
+"If this checkbox is enabled, then the system won’t run the MRP for the available sub-assembly items.","في حال تفعيل هذا الخيار، لن يقوم النظام بتشغيل تخطيط متطلبات المواد (MRP) لأصناف التجميع الفرعي المتوفرة."
+Manufacturing Type,نوع التصنيع
+Get Sub Assembly Items,جلب أصناف التجميع الفرعي
+Raw Materials Warehouse,مستودع المواد الخام
+Get Raw Materials for Purchase,جلب المواد الخام للشراء
+Get Raw Materials for Transfer,جلب المواد الخام للتحويل
+Consider Minimum Order Qty,مراعاة الحد الأدنى لكمية الطلب
+Include Safety Stock in Required Qty Calculation,تضمين مخزون الأمان في حساب الكمية المطلوبة
+Ignore Available Stock,تجاهل المخزون المتوفر
+"If enabled, the system will create material requests even if the stock exists in the 'Raw Materials Warehouse'.","في حال التفعيل، سيقوم النظام بإنشاء طلبات مواد حتى لو توفر المخزون في 'مستودع المواد الخام'"
+Plan to Request Qty,الكمية المخطط لطلبها
+Qty As Per BOM,الكمية حسب قائمة المواد
+Sub Assembly Item Code,رمز صنف التجميع الفرعي
+Bom No,رقم قائمة المواد
+Returned Qty,الكمية المرتجعة
+Process Loss Qty,كمية فقد العمليات
+Operation & Workstation,العملية ومحطة العمل
+Actual Time,الوقت الفعلي
+Expected Time Required (In Mins),الوقت المطلوب المتوقع (بالدقائق)
+Scrap Item Name,اسم صنف الخردة
+Scrap Item Code,رمز صنف الخردة
+FG Qty from Transferred Raw Materials,كمية المنتج التام من المواد الخام المحولة
+Floor Name,اسم الطابق
+Demand,الطلب
+Preview Chart,معاينة المخطط
+Type of Chart,نوع المخطط
+Job Capacity,قدرة العمل
+Run parallel job cards in a workstation,تشغيل بطاقات عمل متوازية في محطة العمل
+Workstation Status,حالة محطة العمل
+Status Illustration,توضيح الحالة
+Active Status,الحالة النشطة
+Inactive Status,الحالة غير النشطة
+Is Corrective Operation,هل هي عملية تصحيحية
+Sub Operations,عمليات فرعية
+Fixed Time,الوقت الثابت
+Operation time does not depend on quantity to produce,وقت العملية لا يعتمد على الكمية المطلوب إنتاجها
+Set Operating Cost Based On BOM Quantity,تعيين تكلفة التشغيل بناءً على كمية قائمة المواد
+Excess Materials Consumed,المواد المستهلكة الزائدة
+View BOM Update Log,عرض سجل تحديث قائمة المواد
+Note: Automatic log deletion only applies to logs of type Update Cost,ملاحظة: ينطبق الحذف التلقائي للسجلات فقط على السجلات من نوع 'تحديث التكلفة' (Update Cost).
+BOM Update Tool Log with job status maintained,سجل أداة تحديث قائمة المواد مع الاحتفاظ بحالة المهمة
+BOM Update Log,سجل تحديث قائمة المواد
+
+Job Card and Capacity Planning, بطاقة العمل وتخطيط القدرة
+BOM and Production, قائمة المواد والإنتاج
+Raw Materials Consumption , استهلاك المواد الخام
+Allow Continuous Material Consumption, السماح باستهلاك المواد المستمر
+Allow material consumptions without immediately manufacturing finished goods against a Work Order, السماح باستهلاك المواد دون تصنيع المنتجات النهائية فوراً مقابل أمر عمل
+Validate Components and Quantities Per BOM, التحقق من صحة المكونات والكميات حسب قائمة المواد
+
+Allow Excess Material Transfer, السماح بتحويل المواد الزائدة
+Allow transferring raw materials even after the Required Quantity is fulfilled, السماح بتحويل المواد الخام حتى بعد استيفاء الكمية المطلوبة
+Add Corrective Operation Cost in Finished Good Valuation, إضافة تكلفة العملية التصحيحية في تقييم المنتج النهائي
+Enforce Time Logs, فرض سجلات الوقت
+Enabling this checkbox will force each Job Card Time Log to have From Time and To Time, تفعيل هذا الخيار سيفرض وجود وقت البداية ووقت النهاية في كل سجل وقت ببطاقة العمل
+Capacity Planning, تخطيط القدرة الاستيعابية
+Disable Capacity Planning, تعطيل تخطيط القدرة الاستيعابية
+Allow Overtime, السماح بالعمل الإضافي
+Log time outside of workstation working hours, تسجيل الوقت خارج ساعات عمل محطة العمل
+Allow Production on Holidays, السماح بالإنتاج في أيام العطلات
+Capacity Planning For (Days), تخطيط القدرة الاستيعابية لـ (أيام)
+Plan operations before X number of days, تخطيط العمليات قبل X من الأيام
+Time Between Operations (mins), الوقت بين العمليات (بالدقائق)
+Default: 10 mins, الافتراضي: 10 دقائق
+Other Settings, إعدادات أخرى
+Make Serial No / Batch from Work Order, إنشاء رقم تسلسلي / رقم تشغيلة من أمر العمل
+System will automatically create the serial numbers / batch for the Finished Good on submission of work order, سيقوم النظام تلقائياً بإنشاء الأرقام التسلسلية أو رقم التشغيلة للمنتج النهائي عند اعتماد أمر العمل
+Set Operating Cost / Scrap Items From Sub-assemblies, تعيين تكلفة التشغيل / أصناف الخردة من التجميعات الفرعية
+"To include sub-assembly costs and scrap items in Finished Goods on a work order without using a job card, when the 'Use Multi-Level BOM' option is enabled."," لتضمين تكاليف التجميعات الفرعية وأصناف الخردة في المنتجات النهائية ضمن أمر العمل دون استخدام بطاقة عمل، عند تفعيل خيار 'استخدام قائمة مواد متعددة المستويات"
+Manual Inspection,فحص يدوي
+Reading Value,قيمة القراءة
+Numeric Inspection,الفحص الرقمي
+
+
+Applied on each reading., يتم تطبيقه على كل قراءة.
+Set the status manually., تعيين الحالة يدوياً.
+Formula Based Criteria, معايير قائمة على صيغة
+Start Timer, ابدأ المؤقت
+Hide timesheets, إخفاء سجلات الدوام
+On Track,في المسار الصحيح
+Progress (%),نسبة التقدم (%)
+Delay (In Days),التأخير (بالأيام)
+Fetch Timesheet in Sales Invoice,جلب سجل الدوام في فاتورة المبيعات
