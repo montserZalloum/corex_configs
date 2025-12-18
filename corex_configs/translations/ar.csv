@@ -204,3 +204,69 @@ Monthly Rank,الترتيب الشهري
 Points,نقاط
 No Items Found,لم يتم العثور على أي عناصر
 Change User,تغيير المستخدم
+Your Shortcuts,اختصاراتك
+Inventory Settings,إعدادات المخزون
+Deferred Accounting,المحاسبة المؤجلة
+Default Discount Account,حساب الخصم الافتراضي
+Default Provisional Account,الحساب المؤقت الافتراضي
+Allow Purchase,السماح بالشراء
+Grant Commission,منح العمولة
+Allow Sales,السماح بالمبيعات
+Minimum Net Rate,الحد الأدنى للسعر الصافي
+Maximum Net Rate,الحد الأقصى للسعر الصافي
+BOM Info,معلومات قائمة المواد (BOM)
+Is Finished Item,المنتَج مُنتهي
+Is Scrap Item,عُنصُر خردة
+Use Serial No / Batch Fields,استخدم حقول الرقم التسلسلي / الدفعة
+Other Info,معلومات أُخرى
+Apply Putaway Rule,تطبيق قاعدة التخزين
+Available Qty For Consumption,الكمية المتاحة للاستهلاك
+Qty to Be Consumed,الكمية المطلوب استهلاكها
+Dispatch Address Template,قالب عنوان الشحن
+Shipping Address Template,نموذج عنوان الشحن
+Company Billing Address,عنوان الشركة للفواتير
+Additional Info,معلومات إضافية
+Is Customer Confirmed Receipt,هل تم تأكيد استلام العميل؟
+Dispatch Address Name,اسم عنوان الإرسال
+Company Contact Person,جهة اتصال الشركة
+Amount Eligible for Commission,المبلغ المؤهل للعمولة
+Segregate Serial / Batch Bundle,فصل الحزم التسلسلية / الدفعية
+Show Dimension Wise Stock,عرض المخزون حسب الأبعاد
+Include Zero Stock Items,تضمين المنتجات التي لا يوجد بها مخزون
+Ignore Closing Balance,تجاهل الرصيد الختامي
+Delivery Trends,اتجاهات التوصيل
+Oldest Items,العناصر الأقدم
+Item Shortage Summary,ملخص نقص الأصناف
+Aggregate a group of Items into another Item. This is useful if you are maintaining the stock of the packed items and not the bundled item,تجميع مجموعة من العناصر في عنصر آخر. هذا مفيد إذا كنت تدير مخزون العناصر المعبأة وليس العنصر المجمّع.
+"<h3>About Product Bundle</h3>
+
+<p>Aggregate group of <b>Items</b> into another <b>Item</b>. This is useful if you are bundling a certain <b>Items</b> into a package and you maintain stock of the packed <b>Items</b> and not the aggregate <b>Item</b>.</p>
+<p>The package <b>Item</b> will have <code>Is Stock Item</code> as <b>No</b> and <code>Is Sales Item</code> as <b>Yes</b>.</p>
+<h4>Example:</h4>
+<p>If you are selling Laptops and Backpacks separately and have a special price if the customer buys both, then the Laptop + Backpack will be a new Product Bundle Item.</p>","<h3>حول حزمة المنتج</h3>
+
+<p>تجميع مجموعة من <b>العناصر</b> في <b>عنصر</b> آخر. يفيد ذلك عند تجميع <b>عناصر</b> معينة في حزمة، مع إدارة مخزون <b>العناصر</b> المعبأة فقط وليس <b>العنصر</b> المجمّع.</p> <p>سيكون <b>عنصر</b> الحزمة مضبوطًا على <code>هل هو عنصر مخزون</code> = <b>لا</b> و<code>هل هو عنصر مبيعات</code> = <b>نعم</b>.</p> <h4>مثال:</h4> <p>إذا كنت تبيع أجهزة اللابتوب وحقائب الظهر بشكل منفصل، وتقدم سعرًا خاصًا عند شراء الاثنين معًا، فسيكون (لابتوب + حقيبة ظهر) عنصر حزمة منتج جديد.</p>"
+Competitors,المنافسون
+Terms & Conditions,الشروط والأحكام
+Use Company default Cost Center for Round off,استخدم مركز التكلفة الافتراضي للشركة للتقريب
+Difference Posting Date,تاريخ الفرق في القيد
+Order No,رقم الطلب
+Customer Defaults,إعدادات العميل الافتراضية
+Item Price Settings,إعدادات أسعار الأصناف
+Use Prices from Default Price List as Fallback,استخدام الأسعار من قائمة الأسعار الافتراضية كخيار احتياطي
+Calculate Product Bundle Price based on Child Items' Rates,احتساب سعر حزمة المنتج بناءً على أسعار العناصر الفرعية
+Allow Negative rates for Items,السماح بأسعار سالبة للأصناف
+Allow Item to be Added Multiple Times in a Transaction,السماح بإضافة العنصر عدة مرات في المعاملة
+Transaction Settings,إعدادات المعاملات
+Allow Sales Order Creation For Expired Quotation,السماح بإنشاء أوامر بيع لعروض الأسعار المنتهية الصلاحية
+Don't Reserve Sales Order Qty on Sales Return,لا تقم بحجز كمية طلب المبيعات عند إرجاع المبيعات
+Enable Discount Accounting for Selling,تفعيل محاسبة الخصم للمبيعات
+"If enabled, additional ledger entries will be made for discounts in a separate Discount Account",في حال التفعيل، سيتم إدخال قيود دفترية إضافية للخصومات في حساب خصم منفصل.
+Allow Quotation with Zero Quantity,السماح بعرض سعر بكمية صفرية
+Allows users to submit Quotations with zero quantity. Useful when rates are fixed but the quantities are not. Eg. Rate Contracts.,يُتيح هذا النظام للمستخدمين تقديم عروض أسعار بدون تحديد كمية. وهو مفيد عندما تكون الأسعار ثابتة ولكن الكميات غير ثابتة، كما في عقود الأسعار.
+Allow Sales Order with Zero Quantity,السماح بطلب مبيعات بكمية صفرية
+Allows users to submit Sales Orders with zero quantity. Useful when rates are fixed but the quantities are not. Eg. Rate Contracts.,يُتيح هذا النظام للمستخدمين إرسال طلبات بيع بكمية صفرية. وهو مفيد عندما تكون الأسعار ثابتة ولكن الكميات غير ثابتة، كما في عقود الأسعار.
+Sales Update Frequency in Company and Project,معدل تحديث المبيعات في الشركة والمشروع
+Blanket Order Allowance (%),نسبة السماح بأمر الشراء الشامل (%)
+Percentage you are allowed to sell beyond the Blanket Order quantity.,النسبة المسموح لك ببيعها فوق كمية أمر الشراء الشامل.
+"Standard Terms and Conditions that can be added to Sales and Purchases. Examples: Validity of the offer, Payment Terms, Safety and Usage, etc.","الشروط والأحكام القياسية التي يمكن إضافتها للمبيعات والمشتريات. أمثلة: صلاحية العرض، شروط الدفع، السلامة والاستخدام، إلخ."
