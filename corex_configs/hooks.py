@@ -45,7 +45,18 @@ after_migrate = [
     "corex_configs.utils.cleanup_gender_doctype",
     "corex_configs.overrides.powered_by_footer.apply_website_settings",
 ]
-fixtures = ["Navbar Settings"]
+fixtures = [
+    "Navbar Settings",
+    {
+        "dt": "Property Setter",
+        "filters": [
+            # Filter for both DocTypes at once
+            ["doc_type", "in", ["Territory", "UOM","Item Attribute"]],
+            # Ensure we only export the translation setting
+            ["property", "=", "translated_doctype"]
+        ]
+    }
+]
 
 
 # Scheduled Tasks

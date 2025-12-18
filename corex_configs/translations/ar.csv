@@ -283,3 +283,91 @@ Categorize by Item,التصنيف حسب العنصر
 Expires today or already expired,ينتهي اليوم أو انتهت صلاحيته بالفعل
 Expires in a week or less,تنتهي الصلاحية خلال أسبوع أو أقل
 Categorize By,التصنيف حسب
+Annual Sales,المبيعات السنوية
+Active Customers,العملاء النشطون
+Top Customers,أهم العملاء
+Item-wise Annual Sales,المبيعات السنوية حسب الصنف
+Customer Portal Users,مستخدمو بوابة العملاء
+Contract Attachment,مُلحق العقد
+Contract Start Date,تاريخ بدء العقد
+Is Contract Active,هل العقد نشط؟
+Mention if non-standard Receivable account,يرجى ذكر ما إذا كان حساب المستحقات غير قياسي
+Jordan,الأردن
+Sales Partner Target Variance Based On Item Group,تباين أهداف شركاء المبيعات بناءً على مجموعة الأصناف
+Is Group Warehouse,؟مستودع جماعي
+Is Rejected Warehouse,مستودع مرفوض؟
+If yes, then this warehouse will be used to store rejected materials,إذا كانت الإجابة بنعم، فسيتم استخدام هذا المستودع لتخزين المواد المرفوضة
+Transit,عبور
+Default In-Transit Warehouse,المستودع الافتراضي للنقل
+Consider Rejected Warehouses,ضع في اعتبارك المستودعات المرفوضة
+Enable it if users want to consider rejected materials to dispatch.,فعّله إذا أراد المستخدمون احتساب المواد المرفوضة للتسليم.
+Pick Manually,اختر يدويًا
+If enabled then system won't override the picked qty / batches / serial numbers / warehouse.,إذا تم التفعيل، فلن يقوم النظام بتجاوز الكمية/الدفعات/أرقام التسلسل/المستودع المختار.
+If enabled then system won't apply the pricing rule on the delivery note which will be create from the pick list,إذا تم التفعيل، فلن يطبق النظام قاعدة التسعير على سند التسليم الذي سيتم إنشاؤه من قائمة الالتقاط.
+Scan Mode,وضع المسح
+If checked, picked qty won't automatically be fulfilled on submit of pick list.,إذا تم التحديد، فلن يتم تنفيذ الكمية المختارة تلقائيًا عند تقديم قائمة الالتقاط.
+Prompt Qty,الكمية المطلوبة
+Qty (in Stock UOM),الكمية (بوحدة المخزون)
+Picked Qty (in Stock UOM),الكمية المختارة (بوحدة المخزون)
+Available Batch Report,تقرير الدفعات المتاحة
+Available Serial No,أرقام التسلسل المتاحة
+FIFO Queue vs Qty After Transaction Comparison,مقارنة قائمة FIFO مقابل الكمية بعد المعاملة
+Incorrect Balance Qty After Transaction,الكمية المتبقية غير الصحيحة بعد المعاملة
+Incorrect Serial No Valuation,تقييم أرقام التسلسل غير الصحيح
+Incorrect Stock Value Report,تقرير قيمة المخزون غير الصحيحة
+Auto Insert Item Price If Missing,إدراج سعر المنتج تلقائيًا في حالة عدم وجوده
+Price List Defaults,الإعدادات الافتراضية لقائمة الأسعار
+Update Existing Price List Rate,تحديث سعر قائمة الأسعار الحالية
+Update Price List Based On,تحديث قائمة الأسعار بناءً على
+Stock UOM Quantity,كمية وحدة قياس المخزون
+Allow to Edit Stock UOM Qty for Sales Documents,السماح بتعديل كمية وحدة قياس المخزون في مستندات المبيعات
+Allow to Edit Stock UOM Qty for Purchase Documents,السماح بتعديل كمية وحدة قياس المخزون في مستندات الشراء
+Allow UOM with Conversion Rate Defined in Item,السماح بوحدات القياس مع تحديد معدل التحويل في العنصر
+"If enabled, the system will allow selecting UOMs in sales and purchase transactions only if the conversion rate is set in the item master.","إذا تم التفعيل، سيسمح النظام باختيار وحدات القياس في معاملات المبيعات والمشتريات فقط إذا تم تحديد معدل التحويل في سجل العنصر."
+Stock Validations,التحقق من صحة المخزون
+Stock Transactions Settings,إعدادات معاملات المخزون
+Role Allowed to Over Deliver/Receive,الدور المسموح له بتسليم/استلام كميات إضافية
+Users with this role are allowed to over deliver/receive against orders above the allowance percentage,المستخدمون الذين لديهم هذا الدور مسموح لهم بتسليم/استلام كميات إضافية فوق نسبة السماح المحددة للأوامر.
+Show Barcode Field in Stock Transactions,إظهار حقل الباركود في معاملات المخزون
+Over Transfer Allowance,تجاوز حد السماح بالنقل
+Convert Item Description to Clean HTML in Transactions,تحويل وصف الصنف إلى HTML نظيف في المعاملات
+"The percentage you are allowed to transfer more against the quantity ordered. For example, if you have ordered 100 units, and your Allowance is 10%, then you are allowed transfer 110 units.","النسبة المئوية المسموح لك بنقلها فوق الكمية المطلوبة. على سبيل المثال، إذا طلبت 100 وحدة وبلغ حد السماح لديك 10%، فيُسمح لك بنقل 110 وحدات."
+Allow Internal Transfers at Arm's Length Price,السماح بالنقل الداخلي بسعر السوق العادل
+"If enabled, the item rate won't adjust to the valuation rate during internal transfers, but accounting will still use the valuation rate.","إذا تم التفعيل، فلن يتغير سعر الصنف ليتوافق مع سعر التقييم أثناء النقل الداخلي، لكن المحاسبة ستظل تستخدم سعر التقييم."
+Over Picking Allowance,تجاوز حد السماح بالاستلام الزائد
+The percentage you are allowed to pick more items in the pick list than the ordered quantity.,النسبة المئوية المسموح بها لاختيار كمية أكبر من الأصناف في قائمة الاستلام مقارنة بالكمية المطلوبة.
+Serial & Batch Item,صنف ذو رقم تسلسلي ودفعة
+Serial & Batch Item Settings,إعدادات الأصناف ذات الأرقام التسلسلية والدفعات
+Allow existing Serial No to be Manufactured/Received again,السماح بإعادة تصنيع/استلام الرقم التسلسلي الحالي
+Disable Serial No And Batch Selector,تعطيل الرقم التسلسلي واختيار الدفعة
+Do Not Use Batch-wise Valuation,عدم استخدام التقييم حسب الدفعات
+"If enabled, the system will use the moving average valuation method to calculate the valuation rate for the batched items and will not consider the individual batch-wise incoming rate.","إذا تم التفعيل، سيستخدم النظام طريقة التقييم بالمتوسط المتحرك لحساب سعر التقييم للأصناف المجمعة، ولن يأخذ في الاعتبار سعر الاستلام لكل دفعة على حدة."
+Use Serial / Batch Field,استخدام حقول الرقم التسلسلي / الدفعة
+"On submission of the stock transaction, system will auto create the Serial and Batch Bundle based on the Serial No / Batch fields.","عند تقديم معاملة المخزون، سيقوم النظام تلقائيًا بإنشاء حزمة الأرقام التسلسلية والدفعات بناءً على حقول الرقم التسلسلي / الدفعة."
+Auto Create Serial and Batch Bundle For Outward,إنشاء تلقائي لحزمة الأرقام التسلسلية والدفعات للصادرات
+Do Not Update Serial / Batch on Creation of Auto Bundle,عدم تحديث الرقم التسلسلي / الدفعة عند إنشاء الحزمة التلقائية
+"If enabled, do not update serial / batch values in the stock transactions on creation of auto Serial 
+ / Batch Bundle. ","إذا تم التفعيل، فلن يتم تحديث قيم الرقم التسلسلي / الدفعة في معاملات المخزون عند إنشاء الحزمة التلقائية للأرقام التسلسلية / الدفعات."
+Serial and Batch Bundle,حزمة الأرقام التسلسلية والدفعات
+Set Serial and Batch Bundle Naming Based on Naming Series,تعيين تسمية حزمة الأرقام التسلسلية والدفعات بناءً على سلسلة التسمية
+Have Default Naming Series for Batch ID?,هل يوجد سلسلة تسمية افتراضية لرقم الدفعة؟
+Enable Stock Reservation,تفعيل حجز المخزون
+Allows to keep aside a specific quantity of inventory for a particular order.,يسمح بتخصيص كمية محددة من المخزون لطلب معين.
+Quality Inspection Settings,إعدادات فحص الجودة
+Action If Quality Inspection Is Rejected,الإجراء المتخذ في حال رفض فحص الجودة
+Allow to Make Quality Inspection after Purchase / Delivery,السماح بإجراء فحص الجودة بعد الشراء / التسليم
+Stock Planning,تخطيط المخزون
+Control Historical Stock Transactions,التحكم في معاملات المخزون السابقة
+Role Allowed to Create/Edit Back-dated Transactions,الأدوار المسموح لها بإنشاء/تعديل المعاملات المؤرخة سابقًا
+"If mentioned, the system will allow only the users with this Role to create or modify any stock transaction earlier than the latest stock transaction for a specific item and warehouse. If set as blank, it allows all users to create/edit back-dated transactions.","إذا تم تحديده، سيسمح النظام فقط للمستخدمين الذين لديهم هذا الدور بإنشاء أو تعديل أي معاملة مخزون بتاريخ أسبق من آخر معاملة مخزون لصنف ومستودع محددين. إذا تُرك فارغًا، يُسمح لجميع المستخدمين بإنشاء/تعديل المعاملات المؤرخة سابقًا."
+Stock transactions that are older than the mentioned days cannot be modified.,لا يمكن تعديل معاملات المخزون التي يزيد عمرها عن الأيام المحددة.
+Stock Reservation,حجز المخزون
+Stock Closing,إغلاق المخزون
+Use Serial / Batch Fields,استخدام حقول الرقم التسلسلي / الدفعة
+Pick Serial / Batch Based On,اختيار الرقم التسلسلي / الدفعة بناءً على
+No stock transactions can be created or modified before this date.,لا يمكن إنشاء أو تعديل أي معاملات مخزون قبل هذا التاريخ.
+If yes, then this warehouse will be used to store rejected materials,إذا كانت الإجابة نعم، فسيتم استخدام هذا المستودع لتخزين المواد المرفوضة.
+Serial No Ledger,دفتر حسابات الأرقام التسلسلية
+View Ledgers,عرض دفاتر الحسابات
+Use Batch-wise Valuation,استخدم التقييم على أساس الدفعات
+Reserved for Production Plan,محجوز لخطة الإنتاج
