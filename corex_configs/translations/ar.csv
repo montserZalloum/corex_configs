@@ -371,3 +371,14 @@ Serial No Ledger,دفتر حسابات الأرقام التسلسلية
 View Ledgers,عرض دفاتر الحسابات
 Use Batch-wise Valuation,استخدم التقييم على أساس الدفعات
 Reserved for Production Plan,محجوز لخطة الإنتاج
+Auto Created Serial and Batch Bundle,إنشاء تلقائي لحزمة الأرقام التسلسلية والدفعات
+Dependant SLE Voucher Detail No,رقم تفصيلي لقسيمة دفتر الأستاذ للأرقام التسلسلية التابعة
+Is Adjustment Entry,هل هي قيد تعديل
+Recalculate Incoming/Outgoing Rate,إعادة حساب سعر الاستلام/الصرف
+Disables auto-fetching of existing quantity,يعطل جلب الكمية الموجودة تلقائيًا
+Acceptance Criteria Value,قيمة معايير القبول
+Numeric,رقمي
+Maximum Value,القيمة القصوى
+Enabled Items only,الأصناف المفعلة فقط
+Disabled Items only,الأصناف المعطلة فقط
+All Items,جميع الأصناف
