@@ -464,14 +464,12 @@ View BOM Update Log,عرض سجل تحديث قائمة المواد
 Note: Automatic log deletion only applies to logs of type Update Cost,ملاحظة: ينطبق الحذف التلقائي للسجلات فقط على السجلات من نوع 'تحديث التكلفة' (Update Cost).
 BOM Update Tool Log with job status maintained,سجل أداة تحديث قائمة المواد مع الاحتفاظ بحالة المهمة
 BOM Update Log,سجل تحديث قائمة المواد
-
 Job Card and Capacity Planning, بطاقة العمل وتخطيط القدرة
 BOM and Production, قائمة المواد والإنتاج
 Raw Materials Consumption , استهلاك المواد الخام
 Allow Continuous Material Consumption, السماح باستهلاك المواد المستمر
 Allow material consumptions without immediately manufacturing finished goods against a Work Order, السماح باستهلاك المواد دون تصنيع المنتجات النهائية فوراً مقابل أمر عمل
 Validate Components and Quantities Per BOM, التحقق من صحة المكونات والكميات حسب قائمة المواد
-
 Allow Excess Material Transfer, السماح بتحويل المواد الزائدة
 Allow transferring raw materials even after the Required Quantity is fulfilled, السماح بتحويل المواد الخام حتى بعد استيفاء الكمية المطلوبة
 Add Corrective Operation Cost in Finished Good Valuation, إضافة تكلفة العملية التصحيحية في تقييم المنتج النهائي
@@ -494,8 +492,6 @@ Set Operating Cost / Scrap Items From Sub-assemblies, تعيين تكلفة ال
 Manual Inspection,فحص يدوي
 Reading Value,قيمة القراءة
 Numeric Inspection,الفحص الرقمي
-
-
 Applied on each reading., يتم تطبيقه على كل قراءة.
 Set the status manually., تعيين الحالة يدوياً.
 Formula Based Criteria, معايير قائمة على صيغة
