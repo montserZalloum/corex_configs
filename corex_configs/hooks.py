@@ -35,7 +35,8 @@ doc_events = {
 
 
 after_migrate = [
-    # "corex_configs.overrides.corex_translations.setup_corex_translations",
+    "corex_configs.overrides.corex_translations.setup_corex_translations",
+    "corex_configs.overrides.corex_translations.import_frappe_translations",
     "corex_configs.custom.customer_contracts_tab.add_customer_contract_fields",
     "corex_configs.custom.web_page.add_web_page_fields",
     "corex_configs.utils.modify_shortcuts",
