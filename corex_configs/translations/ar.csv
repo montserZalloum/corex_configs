@@ -15988,3 +15988,9 @@ Income Source Sequence,تسلسل مصدر الدخل
 Branch ID from JoFotara portal (تسلسل مصدر الدخل),معرّف الفرع من بوابة JoFotara (تسلسل مصدر الدخل)
 Frappe Light,Corex Light
 Timeless Night,الوضع الداكن
+JoFotara Status,حالة جو فوترة
+JoFotara Integration, التكامل مع جو فوترة
+JoFotara Payment Type,نوع الدفع في جو فوترة
+Driven by the 'Is Cash' checkbox.,يتم الدفع عن طريق خانة الاختيار "نقداً".
+"If checked, payment type is Cash and a Payment Entry is auto-created on submit. Otherwise, payment type is Credit.","في حال تحديد هذا الخيار، يكون نوع الدفع نقداً ويتم إنشاء سجل دفع تلقائياً عند الإرسال. وإلا، يكون نوع الدفع ائتماناً."
+Is Cash,نقداً؟
