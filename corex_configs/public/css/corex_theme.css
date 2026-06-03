@@ -34,6 +34,12 @@
 [dir="rtl"] .dropdown-menu{
  right:auto;
 }
+[dir="rtl"] .form-control,
+[dir="rtl"] .grid-body .editable-row input[data-fieldtype=Int], 
+[dir="rtl"] .grid-body .editable-row input[data-fieldtype=Float],
+[dir="rtl"] .grid-body .editable-row input[data-fieldtype=Currency]{
+ text-align: right;
+}
 
 
 [data-fieldname="disable_standard_email_footer"],
