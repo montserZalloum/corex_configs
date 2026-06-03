@@ -28,9 +28,14 @@
   0%   { left: -150px; }
   100% { left: 240px; }
 }
-.text-right {
+[dir="rtl"] .text-right {
   text-align: right !important;
 }
+[dir="rtl"] .dropdown-menu{
+ right:auto;
+}
+
+
 [data-fieldname="disable_standard_email_footer"],
 [data-fieldname="enable_onboarding"],
 [data-fieldname="hide_footer_in_auto_email_reports"],
