@@ -37,9 +37,11 @@
 [dir="rtl"] .form-control,
 [dir="rtl"] .grid-body .editable-row input[data-fieldtype=Int], 
 [dir="rtl"] .grid-body .editable-row input[data-fieldtype=Float],
-[dir="rtl"] .grid-body .editable-row input[data-fieldtype=Currency]{
+[dir="rtl"] .grid-body .editable-row input[data-fieldtype=Currency],
+[dir="rtl"] [class*="dt-instance-"] [class*="dt-cell--col-"]{
  text-align: right;
 }
+
 
 
 [data-fieldname="disable_standard_email_footer"],
